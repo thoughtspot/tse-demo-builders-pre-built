@@ -12,12 +12,6 @@ Contains pre-built TSE Demo Builder configurations in JSON format. These configu
 ### 📁 `icons/`
 A collection of saved icons that can be used for custom menu items and navigation elements. **Note: Custom icon support is coming soon!** This folder is prepared for future functionality.
 
-### 📁 `.github/`
-Contains GitHub Actions workflows for CI/CD processes, including:
-- Jenkins trigger workflows
-- Sonar scan configurations
-- Sync to public mirror workflows
-
 ## Usage
 
 ### Configurations
