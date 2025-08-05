@@ -1,0 +1,334 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2025-08-05T12:52:09.585Z",
+  "description": "TSE Demo Builder Configuration Export",
+  "standardMenus": [
+    {
+      "id": "home",
+      "icon": "/icons/home.png",
+      "name": "Home",
+      "enabled": true,
+      "homePageType": "iframe",
+      "homePageValue": "https://chakra-ui.com/"
+    },
+    {
+      "id": "spotter",
+      "icon": "/icons/spotter.png",
+      "name": "Spotter",
+      "enabled": true,
+      "spotterModelId": "cd252e5c-b552-49a8-821d-3eadaa049cca",
+      "spotterSearchQuery": "what are my top selling items"
+    },
+    {
+      "id": "favorites",
+      "icon": "/icons/favorites.png",
+      "name": "Favorites",
+      "enabled": true,
+      "contentType": "",
+      "namePattern": ""
+    },
+    {
+      "id": "my-reports",
+      "icon": "📈",
+      "name": "My Reports",
+      "enabled": true,
+      "contentType": "Liveboard"
+    },
+    {
+      "id": "search",
+      "icon": "/icons/search.png",
+      "name": "Search",
+      "enabled": true,
+      "searchDataSource": "cd252e5c-b552-49a8-821d-3eadaa049cca",
+      "searchTokenString": "[sales] by [item type]",
+      "runSearch": true
+    },
+    {
+      "id": "full-app",
+      "icon": "/icons/full-app.png",
+      "name": "Full App",
+      "enabled": true
+    }
+  ],
+  "customMenus": [
+    {
+      "id": "custom-1753368372545",
+      "name": "Content menu",
+      "description": "Menu with specific content.",
+      "icon": "💵",
+      "enabled": true,
+      "contentSelection": {
+        "type": "specific",
+        "specificContent": {
+          "liveboards": [
+            "e891ae18-b875-4157-937f-53ed3f880f7b",
+            "5689cebf-5168-4dd4-a44d-da443c579b07",
+            "9d6eca85-2d7c-43c2-b470-4c558393bef2",
+            "168d1273-7e4c-4fdc-90c8-11a6a5a4fd62"
+          ],
+          "answers": [
+            "ae7be158-7f90-474f-bd17-f65e4355b37c",
+            "11e9294b-6e44-43b7-903c-15b6b9af5531",
+            "2fa2b175-dcc3-4999-a767-e486d7131e1b"
+          ]
+        }
+      }
+    },
+    {
+      "id": "custom-1753466480099",
+      "name": "Banking",
+      "description": "Content with \"Banking\" tag.",
+      "icon": "🏦",
+      "enabled": true,
+      "contentSelection": {
+        "type": "tag",
+        "tagIdentifiers": [
+          "Banking"
+        ]
+      }
+    },
+    {
+      "id": "custom-1754394980103",
+      "name": "Marketing",
+      "description": "marketing info",
+      "icon": "📈",
+      "enabled": true,
+      "contentSelection": {
+        "type": "specific",
+        "specificContent": {
+          "liveboards": [
+            "588105f8-4454-4f2a-9f64-094f235ca31b"
+          ],
+          "answers": []
+        }
+      }
+    }
+  ],
+  "menuOrder": [
+    "home",
+    "custom-1753368372545",
+    "spotter",
+    "favorites",
+    "my-reports",
+    "search",
+    "full-app",
+    "custom-1753466480099",
+    "custom-1754394752020-jw77kqwmg",
+    "custom-1754394980103"
+  ],
+  "homePageConfig": {
+    "type": "liveboard",
+    "value": "0ed66930-fc6a-4e3d-8a05-e0e4a99be0d5"
+  },
+  "appConfig": {
+    "thoughtspotUrl": "https://se-thoughtspot-cloud.thoughtspot.cloud/",
+    "applicationName": "TSE Demo Builder",
+    "logo": "https://www.thoughtspot.com/images/logo-black-with-r.svg",
+    "earlyAccessFlags": ""
+  },
+  "fullAppConfig": {
+    "showPrimaryNavbar": false,
+    "hideHomepageLeftNav": false
+  },
+  "stylingConfig": {
+    "application": {
+      "topBar": {
+        "backgroundColor": "#066204",
+        "foregroundColor": "#ffffff",
+        "logoUrl": ""
+      },
+      "sidebar": {
+        "backgroundColor": "#066204",
+        "foregroundColor": "#ffffff"
+      },
+      "footer": {
+        "backgroundColor": "#4fba91",
+        "foregroundColor": "#fcfcfd"
+      },
+      "dialogs": {
+        "backgroundColor": "#4fba91",
+        "foregroundColor": "#fcfcfd"
+      }
+    },
+    "embeddedContent": {
+      "strings": {},
+      "stringIDs": {
+        "liveboard.highlights.title": "Smart Highlights"
+      },
+      "cssUrl": "",
+      "customCSS": {
+        "--ts-var-root-background": "#3e5c45",
+        "--ts-var-root-color": "#f2f7f3",
+        "--ts-var-root-font-family": "'Segoe UI', Arial, sans-serif",
+        "--ts-var-root-text-transform": "none",
+        "--ts-var-root-secondary-color": "#b8cbb8",
+        "--ts-var-nav-background": "#547a5e",
+        "--ts-var-nav-color": "#f2f7f3",
+        "--ts-var-button-border-radius": "5px",
+        "--ts-var-button--icon-border-radius": "5px",
+        "--ts-var-button--primary-background": "#6d997a",
+        "--ts-var-button--primary-color": "#f2f7f3",
+        "--ts-var-button--primary--hover-background": "#4c7d5e",
+        "--ts-var-button--primary--active-background": "#3e5c45",
+        "--ts-var-button--primary--font-family": "'Segoe UI', Arial, sans-serif",
+        "--ts-var-button--secondary-background": "#b8cbb8",
+        "--ts-var-button--secondary-color": "#3e5c45",
+        "--ts-var-button--secondary--hover-background": "#cfe3cf",
+        "--ts-var-button--secondary--active-background": "#a0bfa2",
+        "--ts-var-button--secondary--font-family": "'Segoe UI', Arial, sans-serif",
+        "--ts-var-button--tertiary-background": "#f2f7f3",
+        "--ts-var-button--tertiary-color": "#3e5c45",
+        "--ts-var-button--tertiary--hover-background": "#e4eee7",
+        "--ts-var-button--tertiary--active-background": "#b8cbb8",
+        "--ts-var-menu-background": "#547a5e",
+        "--ts-var-menu-color": "#f2f7f3",
+        "--ts-var-menu-font-family": "'Segoe UI', Arial, sans-serif",
+        "--ts-var-menu--hover-background": "#6d997a",
+        "--ts-var-menu-seperator-background": "#a0bfa2",
+        "--ts-var-dialog-body-background": "#547a5e",
+        "--ts-var-dialog-body-color": "#f2f7f3",
+        "--ts-var-dialog-header-background": "#3e5c45",
+        "--ts-var-dialog-header-color": "#f2f7f3",
+        "--ts-var-dialog-footer-background": "#3e5c45",
+        "--ts-var-viz-background": "#3e5c45",
+        "--ts-var-viz-title-color": "#f2f7f3",
+        "--ts-var-viz-title-font-family": "'Segoe UI', Arial, sans-serif",
+        "--ts-var-viz-description-color": "#b8cbb8",
+        "--ts-var-chip-background": "#6d997a",
+        "--ts-var-chip-color": "#f2f7f3",
+        "--ts-var-chip--hover-background": "#4c7d5e",
+        "--ts-var-axis-title-color": "#f2f7f3",
+        "--ts-var-axis-title-font-family": "'Segoe UI', Arial, sans-serif",
+        "--ts-var-axis-data-label-color": "#b8cbb8",
+        "--ts-var-axis-data-label-font-family": "'Segoe UI', Arial, sans-serif",
+        "--ts-var-search-bar-background": "#547a5e",
+        "--ts-var-search-bar-text-font-color": "#000",
+        "--ts-var-search-bar-text-font-family": "'Segoe UI', Arial, sans-serif",
+        "--ts-var-search-data-button-background": "#6d997a",
+        "--ts-var-search-data-button-font-color": "#f2f7f3",
+        "--ts-var-answer-data-panel-background-color": "#6d997a",
+        "--ts-var-list-selected-background": "#6d997a",
+        "--ts-var-list-hover-background": "#b8cbb8",
+        "rules_UNSTABLE": {
+          "[data-testid=\"list-item-v2-label\"]": {
+            "color": "black"
+          }
+        },
+        "variables": {
+          "--ts-var-root-background": "#3e5c45",
+          "--ts-var-root-color": "#f2f7f3",
+          "--ts-var-root-font-family": "'Segoe UI', Arial, sans-serif",
+          "--ts-var-root-text-transform": "none",
+          "--ts-var-root-secondary-color": "#b8cbb8",
+          "--ts-var-nav-background": "#547a5e",
+          "--ts-var-nav-color": "#f2f7f3",
+          "--ts-var-button-border-radius": "5px",
+          "--ts-var-button--icon-border-radius": "5px",
+          "--ts-var-button--primary-background": "#6d997a",
+          "--ts-var-button--primary-color": "#f2f7f3",
+          "--ts-var-button--primary--hover-background": "#4c7d5e",
+          "--ts-var-button--primary--active-background": "#3e5c45",
+          "--ts-var-button--primary--font-family": "'Segoe UI', Arial, sans-serif",
+          "--ts-var-button--secondary-background": "#b8cbb8",
+          "--ts-var-button--secondary-color": "#3e5c45",
+          "--ts-var-button--secondary--hover-background": "#cfe3cf",
+          "--ts-var-button--secondary--active-background": "#a0bfa2",
+          "--ts-var-button--secondary--font-family": "'Segoe UI', Arial, sans-serif",
+          "--ts-var-button--tertiary-background": "#f2f7f3",
+          "--ts-var-button--tertiary-color": "#3e5c45",
+          "--ts-var-button--tertiary--hover-background": "#e4eee7",
+          "--ts-var-button--tertiary--active-background": "#b8cbb8",
+          "--ts-var-menu-background": "#547a5e",
+          "--ts-var-menu-color": "#f2f7f3",
+          "--ts-var-menu-font-family": "'Segoe UI', Arial, sans-serif",
+          "--ts-var-menu--hover-background": "#6d997a",
+          "--ts-var-menu-seperator-background": "#a0bfa2",
+          "--ts-var-dialog-body-background": "#547a5e",
+          "--ts-var-dialog-body-color": "#f2f7f3",
+          "--ts-var-dialog-header-background": "#3e5c45",
+          "--ts-var-dialog-header-color": "#f2f7f3",
+          "--ts-var-dialog-footer-background": "#3e5c45",
+          "--ts-var-viz-background": "#3e5c45",
+          "--ts-var-viz-title-color": "#f2f7f3",
+          "--ts-var-viz-title-font-family": "'Segoe UI', Arial, sans-serif",
+          "--ts-var-viz-description-color": "#b8cbb8",
+          "--ts-var-chip-background": "#6d997a",
+          "--ts-var-chip-color": "#f2f7f3",
+          "--ts-var-chip--hover-background": "#4c7d5e",
+          "--ts-var-axis-title-color": "#f2f7f3",
+          "--ts-var-axis-title-font-family": "'Segoe UI', Arial, sans-serif",
+          "--ts-var-axis-data-label-color": "#b8cbb8",
+          "--ts-var-axis-data-label-font-family": "'Segoe UI', Arial, sans-serif",
+          "--ts-var-search-bar-background": "#547a5e",
+          "--ts-var-search-bar-text-font-color": "#f2f7f3",
+          "--ts-var-search-bar-text-font-family": "'Segoe UI', Arial, sans-serif",
+          "--ts-var-search-data-button-background": "#6d997a",
+          "--ts-var-search-data-button-font-color": "#f2f7f3",
+          "--ts-var-list-selected-background": "#6d997a",
+          "--ts-var-list-hover-background": "#b8cbb8"
+        }
+      }
+    },
+    "embedFlags": {
+      "liveboardEmbed": {
+        "showLiveboardTitle": true,
+        "showLiveboardDescription": true,
+        "isLiveboardStylingAndGroupingEnabled": true
+      }
+    }
+  },
+  "userConfig": {
+    "users": [
+      {
+        "id": "power-user",
+        "name": "Power User",
+        "description": "Can access all features and content",
+        "access": {
+          "standardMenus": {
+            "home": true,
+            "favorites": true,
+            "my-reports": true,
+            "spotter": true,
+            "search": true,
+            "full-app": true
+          },
+          "customMenus": [
+            "custom-1753466480099",
+            "custom-1753368372545",
+            "custom-1754394733380",
+            "custom-1754394980103"
+          ]
+        }
+      },
+      {
+        "id": "basic-user",
+        "name": "Basic User",
+        "description": "Limited access - cannot access Search and Full App",
+        "access": {
+          "standardMenus": {
+            "home": true,
+            "favorites": true,
+            "my-reports": true,
+            "spotter": true,
+            "search": false,
+            "full-app": false
+          },
+          "customMenus": [
+            "custom-1753466480099"
+          ],
+          "hiddenActions": {
+            "enabled": true,
+            "actions": [
+              "shareViz",
+              "editTSL",
+              "exportTSL",
+              "importTSL",
+              "updateTSL"
+            ]
+          }
+        }
+      }
+    ],
+    "currentUserId": "basic-user"
+  }
+}
