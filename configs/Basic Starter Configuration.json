@@ -83,6 +83,11 @@
     "earlyAccessFlags": "",
     "favicon": "",
     "showFooter": true,
+    "chatbot": {
+      "enabled": true,
+      "welcomeMessage": "Hello! I'm your AI assistant. What would you like to know about your data?",
+      "position": "bottom-right"
+    },
     "faviconSyncEnabled": true
   },
   "fullAppConfig": {
@@ -148,11 +153,16 @@
     },
     "embedFlags": {
       "liveboardEmbed": {
-        "isLiveboardStylingAndGroupingEnabled": true
+        "isLiveboardStylingAndGroupingEnabled": true,
+        "enable2ColumnLayout": true
       },
       "appEmbed": {
-        "isLiveboardStylingAndGroupingEnabled": true
-      }
+        "isLiveboardStylingAndGroupingEnabled": true,
+        "modularHomeExperience": true,
+        "isUnifiedSearchExperienceEnabled": false,
+        "homePageSearchBarMode": "aiAnswer"
+      },
+      "spotterEmbed": {}
     },
     "embedDisplay": {
       "hideTitle": false,
@@ -182,9 +192,7 @@
             "full-app": true,
             "all-content": true
           },
-          "customMenus": [
-            "custom-1757010175877"
-          ],
+          "customMenus": ["custom-1757010175877"],
           "hiddenActions": {
             "enabled": false,
             "actions": []
@@ -206,16 +214,10 @@
             "full-app": false,
             "all-content": false
           },
-          "customMenus": [
-            "custom-1757010175877"
-          ],
+          "customMenus": ["custom-1757010175877"],
           "hiddenActions": {
             "enabled": true,
-            "actions": [
-              "ExportTML",
-              "EditTML",
-              "ImportTML"
-            ]
+            "actions": ["ExportTML", "EditTML", "ImportTML"]
           }
         }
       }
@@ -223,6 +225,6 @@
     "currentUserId": "power-user"
   },
   "version": "1.0.0",
-  "timestamp": "2025-09-04T18:47:22.812Z",
+  "timestamp": "2025-10-14T15:08:05.644Z",
   "description": "TSE Demo Builder Configuration Export"
 }
