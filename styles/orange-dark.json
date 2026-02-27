@@ -1,0 +1,162 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2026-02-27T19:30:30.004Z",
+  "description": "TSE Demo Builder Style Export (dark-orange)",
+  "type": "style",
+  "application": {
+    "topBar": {
+      "backgroundColor": "#2a1407",
+      "foregroundColor": "#fff7ed"
+    },
+    "sidebar": {
+      "backgroundColor": "#1c0f05",
+      "foregroundColor": "#fed7aa"
+    },
+    "footer": {
+      "backgroundColor": "#2a1407",
+      "foregroundColor": "#fff7ed"
+    },
+    "dialogs": {
+      "backgroundColor": "#3a1d0a",
+      "foregroundColor": "#fff7ed"
+    },
+    "buttons": {
+      "primary": {
+        "backgroundColor": "#f97316",
+        "foregroundColor": "#ffffff",
+        "borderColor": "#f97316",
+        "hoverBackgroundColor": "#ea580c",
+        "hoverForegroundColor": "#ffffff"
+      },
+      "secondary": {
+        "backgroundColor": "#3a1d0a",
+        "foregroundColor": "#fed7aa",
+        "borderColor": "#7c2d12",
+        "hoverBackgroundColor": "#7c2d12",
+        "hoverForegroundColor": "#fff7ed"
+      }
+    },
+    "backgrounds": {
+      "mainBackground": "#1c0f05",
+      "contentBackground": "#2a1407",
+      "cardBackground": "#3a1d0a",
+      "borderColor": "#7c2d12"
+    },
+    "typography": {
+      "primaryColor": "#fff7ed",
+      "secondaryColor": "#fed7aa",
+      "linkColor": "#fb923c",
+      "linkHoverColor": "#fdba74"
+    },
+    "selectedTheme": "dark-orange"
+  },
+  "embeddedContent": {
+    "customCSS": {
+      "variables": {
+        "--ts-var-root-background": "#1c0f05",
+        "--ts-var-root-color": "#fff7ed",
+        "--ts-var-viz-background": "#1c0f05",
+        "--ts-var-viz-description-color": "#fff7ed",
+        "--ts-var-button--primary-background": "#f97316",
+        "--ts-var-button--primary-color": "#ffffff",
+        "--ts-var-chip-background": "#3a1d0a",
+        "--ts-var-chip-color": "#fff7ed",
+        "--ts-var-chip-box-shadow": "0px 0px 0px 0px #7c2d12",
+        "--ts-var-chip--hover-background": "#4a230d",
+        "--ts-var-chip--hover-color": "#fff7ed",
+        "--ts-var-button--secondary--active-background": "#7c2d12",
+        "--ts-var-button--secondary-background": "#3a1d0a",
+        "--ts-var-button--secondary-color": "#fed7aa",
+        "--ts-var-button--secondary--hover-background": "#7c2d12",
+        "--ts-var-menu-background": "#2a1407",
+        "--ts-var-menu--hover-background": "#4a230d",
+        "--ts-var-dialog-header-background": "#3a1d0a",
+        "--ts-var-dialog-body-background": "#3a1d0a",
+        "--ts-var-dialog-footer-background": "#3a1d0a",
+        "--ts-var-axis-data-label-color": "#fff7ed",
+        "--ts-var-search-bar-text-font-color": "#fff7ed",
+        "--ts-var-spotter-prompt-background": "#1c0f05",
+        "--ts-var-chart-data-label-stroke-width": "0px",
+        "--ts-var-chart-data-label-text-shadow": "",
+        "--ts-var-answer-view-table-chart-switcher-background": "#2a1407",
+        "--ts-var-answer-view-table-chart-switcher-active-background": "#f97316",
+        "--ts-var-spotter-input-background": "#2a1407"
+      },
+      "rules_UNSTABLE": {
+        ".conv-assist-answer-module__sageTokensBar": {
+          "background-color": "#1c0f05"
+        },
+        ".modal-module__modal.modal-module__small": {
+          "background-color": "#1c0f05"
+        },
+        ".chat-message-card-module__chatMessage": {
+          "background-color": "#1c0f05"
+        },
+        ".chat-message-card-module__chatMessage:before": {
+          "background-color": "#1c0f05"
+        },
+        ".chat-message-card-module__chatMessage:after": {
+          "background-color": "#1c0f05"
+        },
+        ".chat-module__chatHeader": {
+          "background-color": "#1c0f05"
+        },
+        ".conv-assist-answer-module__sageTokens:after": {
+          "background-image": "none"
+        },
+        ".home-container-module__layoutContainer": {
+          "background-color": "#1c0f05"
+        },
+        ".data-panel-module__header": {
+          "background-color": "#1c0f05"
+        },
+        ".data-sources-module__dataSources": {
+          "background-color": "#1c0f05"
+        },
+        ".home-container-module__homepageWrapper": {
+          "background-color": "#1c0f05"
+        },
+        ".popover-module__positionable": {
+          "background-color": "#1c0f05"
+        },
+        ".ag-header-cell": {
+          "color": "#fff7ed"
+        },
+        "ag-row:hover": {
+          "color": "#1c0f05"
+        },
+        "ag-row": {
+          "color": "#fff7ed"
+        },
+        ":root": {
+          "--ag-row-hover-color": "#1c0f05"
+        },
+        ".chip-base-module__default:not(.chip-base-module__edit)": {
+          "border": "1px solid #fff7ed"
+        },
+        ".modal-module__modal": {
+          "border": "1px solid #fff7ed"
+        },
+        ".button-module__sizeM.button-module__both": {
+          "border": "1px solid #fff7ed"
+        },
+        ".bk-outline .ag-theme-alpine .ag-row:hover": {
+          "background-color": "#5a2a10"
+        },
+        ".input-with-tokens-module__text": {
+          "color": "#fff7ed"
+        },
+        ".table-module__cellSelected": {
+          "color": "#1c0f05!important"
+        }
+      }
+    },
+    "strings": {},
+    "stringIDs": {
+      "liveboard.highlights.title": "AI Highlights",
+      "convAssist.landingpage.description2": "Ask a question about your data.",
+      "convAssist.landingpage.description1": "Welcome to the Data Helper",
+      "convAssist.landingpage.title": "Welcome to the Data Helper"
+    }
+  }
+}
