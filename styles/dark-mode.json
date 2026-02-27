@@ -1,0 +1,99 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2026-02-27T14:44:39.671Z",
+  "description": "TSE Demo Builder Style Export",
+  "type": "style",
+  "application": {
+    "topBar": {
+      "backgroundColor": "#1a1a1a",
+      "foregroundColor": "#e5e5e5"
+    },
+    "sidebar": {
+      "backgroundColor": "#242424",
+      "foregroundColor": "#e5e5e5"
+    },
+    "footer": {
+      "backgroundColor": "#1a1a1a",
+      "foregroundColor": "#a3a3a3"
+    },
+    "dialogs": {
+      "backgroundColor": "#1a1a1a",
+      "foregroundColor": "#ffffff"
+    },
+    "buttons": {
+      "primary": {
+        "backgroundColor": "#3b82f6",
+        "foregroundColor": "#ffffff",
+        "hoverBackgroundColor": "#2563eb"
+      },
+      "secondary": {
+        "backgroundColor": "#374151",
+        "foregroundColor": "#e5e5e5",
+        "hoverBackgroundColor": "#4b5563"
+      }
+    },
+    "backgrounds": {
+      "mainBackground": "#0f0f0f",
+      "contentBackground": "#1a1a1a",
+      "borderColor": "#3a3a3a"
+    },
+    "typography": {
+      "primaryColor": "#e5e5e5",
+      "secondaryColor": "#a3a3a3",
+      "linkColor": "#60a5fa"
+    },
+    "selectedTheme": "dark"
+  },
+  "embeddedContent": {
+    "customCSS": {
+      "variables": {
+        "--ts-var-root-color": "#e5e5e5",
+        "--ts-var-root-background": "#1a1a1a",
+        "--ts-var-root-font-family": "Inter, sans-serif",
+        "--ts-var-nav-background": "#242424",
+        "--ts-var-nav-color": "#e5e5e5",
+        "--ts-var-button--primary-color": "#ffffff",
+        "--ts-var-button--primary-background": "#3b82f6",
+        "--ts-var-button--primary--hover-background": "#2563eb",
+        "--ts-var-button--secondary-color": "#e5e5e5",
+        "--ts-var-button--secondary-background": "#374151",
+        "--ts-var-button--secondary--hover-background": "#4b5563",
+        "--ts-var-button-border-radius": "4px",
+        "--ts-var-menu-color": "#e5e5e5",
+        "--ts-var-menu-background": "#242424",
+        "--ts-var-menu--hover-background": "#2d2d2d",
+        "--ts-var-viz-title-color": "#e5e5e5",
+        "--ts-var-viz-description-color": "#a3a3a3",
+        "--ts-var-viz-background": "#242424",
+        "--ts-var-viz-border-radius": "8px",
+        "--ts-var-chip-color": "#e5e5e5",
+        "--ts-var-chip-background": "#374151",
+        "--ts-var-chip--hover-background": "#4b5563",
+        "--ts-var-search-bar-text-font-color": "#e5e5e5",
+        "--ts-var-search-bar-background": "#2d2d2d",
+        "--ts-var-dialog-header-background": "#242424",
+        "--ts-var-dialog-header-color": "#e5e5e5",
+        "--ts-var-dialog-body-background": "#1a1a1a",
+        "--ts-var-dialog-body-color": "#e5e5e5",
+        "--ts-var-viz-color-1": "#3b82f6",
+        "--ts-var-viz-color-2": "#10b981",
+        "--ts-var-viz-color-3": "#f59e0b",
+        "--ts-var-viz-color-4": "#ef4444",
+        "--ts-var-viz-color-5": "#8b5cf6",
+        "--ts-var-viz-color-6": "#06b6d4",
+        "--ts-var-viz-color-7": "#ec4899",
+        "--ts-var-viz-color-8": "#14b8a6",
+        "--ts-var-viz-color-9": "#f97316",
+        "--ts-var-viz-color-10": "#6366f1"
+      },
+      "rules_UNSTABLE": {}
+    },
+    "strings": {
+      "Spotter": "Dark Wizard"
+    },
+    "stringIDs": {
+      "liveboard.highlights.title": "Magical Highlights",
+      "convAssist.landingpage.description2": "Ask a question about the data."
+    }
+  }
+}

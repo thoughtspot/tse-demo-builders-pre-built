@@ -16,7 +16,6 @@ This folder provides a centralized location to:
 As the library grows, expect styles covering areas such as:
 
 - **Themes**: Light, dark, and custom color themes
-- **Branding**: Industry-specific and customer-facing brand styles
 - **Layouts**: Preset layout configurations for different demo scenarios
 - **Typography**: Font and text styling presets
 - **Component Overrides**: Pre-built customizations for embedded ThoughtSpot components
