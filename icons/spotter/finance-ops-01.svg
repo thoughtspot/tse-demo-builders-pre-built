@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="rd-icon-spotter" viewBox="0 0 18 18">
+      <!-- Y-axis -->
+      <line x1="3" y1="13" x2="3" y2="5" stroke="#047857" stroke-width="0.8"/>
+      <!-- X-axis -->
+      <line x1="3" y1="13" x2="15" y2="13" stroke="#047857" stroke-width="0.8"/>
+      <!-- Upward trending line -->
+      <path d="M 4 11 Q 7.5 9 11 6 Q 13 4.5 14 4" stroke="#16a34a" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Data point 1 -->
+      <circle cx="4" cy="11" r="0.5" fill="#16a34a"/>
+      <!-- Data point 2 -->
+      <circle cx="8" cy="8" r="0.5" fill="#16a34a"/>
+      <!-- Data point 3 -->
+      <circle cx="12" cy="5" r="0.5" fill="#16a34a"/>
+      <!-- Data point 4 -->
+      <circle cx="14" cy="4" r="0.5" fill="#16a34a"/>
+      <!-- Sparkle (AI touch) -->
+      <circle cx="15" cy="2" r="0.7" fill="#f9d923"/>
+      <line x1="15" y1="0.8" x2="15" y2="3.2" stroke="#f9d923" stroke-width="0.5"/>
+      <line x1="13.8" y1="2" x2="16.2" y2="2" stroke="#f9d923" stroke-width="0.5"/>
+    </symbol>
+  </defs>
+</svg>
