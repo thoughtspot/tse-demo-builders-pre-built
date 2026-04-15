@@ -4,6 +4,9 @@
 **/.env.*.local
 **/.envrc.local
 
+# Ignore Claude files.
+.claude/
+
 # Ignore user specific bazelrc
 **/.bazelrc.local
 
