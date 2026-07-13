@@ -98,6 +98,8 @@
     "my-reports",
     "spotter",
     "search",
+    "full-app",
+    "all-content",
     "custom-1783427470798",
     "custom-1783431417423"
   ],
@@ -118,7 +120,7 @@
     "showVizPicker": false,
     "authConfig": {
       "authType": "None",
-      "orgId": 1535955086
+      "orgName": "Prod"
     },
     "chatbot": {
       "enabled": true,
@@ -205,6 +207,9 @@
           "--ts-var-button--secondary-color": "#1e3a8a",
           "--ts-var-button--secondary-background": "#bfdbfe",
           "--ts-var-button--secondary--hover-background": "#93c5fd",
+          "--ts-var-button--tertiary-color": "#1e3a8a",
+          "--ts-var-button--tertiary-background": "#bfdbfe",
+          "--ts-var-button--tertiary--hover-background": "#93c5fd",
           "--ts-var-button-border-radius": "6px",
           "--ts-var-menu-color": "#334155",
           "--ts-var-menu-background": "#ffffff",
@@ -218,20 +223,10 @@
           "--ts-var-chip--hover-background": "#bfdbfe",
           "--ts-var-search-bar-text-font-color": "#1e293b",
           "--ts-var-search-bar-background": "#f8fafc",
-          "--ts-var-dialog-header-background": "#1e3a8a",
+          "--ts-var-dialog-header-background": "#abc7f9",
           "--ts-var-dialog-header-color": "#ffffff",
           "--ts-var-dialog-body-background": "#ffffff",
-          "--ts-var-dialog-body-color": "#1e293b",
-          "--ts-var-viz-color-1": "#1e3a8a",
-          "--ts-var-viz-color-2": "#3b82f6",
-          "--ts-var-viz-color-3": "#60a5fa",
-          "--ts-var-viz-color-4": "#0ea5e9",
-          "--ts-var-viz-color-5": "#06b6d4",
-          "--ts-var-viz-color-6": "#0284c7",
-          "--ts-var-viz-color-7": "#7c3aed",
-          "--ts-var-viz-color-8": "#2563eb",
-          "--ts-var-viz-color-9": "#0369a1",
-          "--ts-var-viz-color-10": "#0891b2"
+          "--ts-var-dialog-body-color": "#1e293b"
         },
         "rules_UNSTABLE": {}
       }
@@ -246,13 +241,17 @@
         },
         "enableStopAnswerGenerationEmbed": true,
         "spotterChatConfig": {
-          "hideToolResponseCardBranding": false,
+          "hideToolResponseCardBranding": true,
           "toolResponseCardBrandingLabel": "RX Direct"
         }
       },
       "liveboardEmbed": {
         "enable2ColumnLayout": true,
-        "isLiveboardMasterpiecesEnabled": true
+        "isLiveboardMasterpiecesEnabled": true,
+        "spotterChatConfig": {
+          "hideToolResponseCardBranding": true,
+          "toolResponseCardBrandingLabel": "RX Direct"
+        }
       },
       "appEmbed": {
         "enable2ColumnLayout": true,
@@ -346,6 +345,6 @@
     "currentUserId": "power-user"
   },
   "version": "1.0.0",
-  "timestamp": "2026-07-10T19:06:14.333Z",
+  "timestamp": "2026-07-13T18:56:31.651Z",
   "description": "TSE Demo Builder Configuration Export"
 }
