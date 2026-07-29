@@ -1,0 +1,33 @@
+New Demo Builder Configuration
+
+Create a new configuration in `configs/` based on `configs/Pharma Supply Chain.json` with the following changes:
+
+GUIDs
+- Liveboard GUID: <liveboard-guid>
+- Model GUID: <model-guid> (used for Spotter menu spotterModelId, search searchDataSource, and chatbot selectedModelIds)
+- Collection GUID: <collection-guid>
+- Collection name: <collection-name> (leaf name only, no parent path — e.g. "Banking" not "Industry Demos -> Banking")
+- Collection parent folder: <parent-folder> (for reference only; the collection name field uses the leaf name)
+
+Branding
+- App name: <app-name> (used in applicationName, spotterViz.brandName, toolResponseCardBrandingLabel, footer)
+- Spotter menu label: <ask-label> (e.g. "Ask Apex")
+
+Icons
+- Check icons/spotter/ for an existing <industry>-01.svg sprite and <industry>-preview-01.svg nav icon.
+- If found: set iconSpriteUrl to the CDN URL for <industry>-01.svg, set the Spotter menu icon and the top bar logoUrl both to the CDN URL for <industry>-preview-01.svg.
+- If not found: create both files following the existing naming pattern (<industry>-01.svg with <symbol id="rd-icon-spotter"> and <industry>-preview-01.svg as a standalone SVG), including the gold AI sparkle, then use the CDN URLs as above.
+- CDN base: https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/
+
+Home page
+Write an industry-appropriate home page HTML following the structure of the pharma home page (header, welcome section, 6 KPI cards, quick stats strip, footer). Theme colors should match the industry. Base the content on this scenario:
+
+> <scenario-text>
+
+Custom menus
+- Menu 1: collection browser named "<Industry> Analytics" using the collection GUID above
+- Menu 2: liveboard named "<Industry> Dashboard" using the liveboard GUID above, with a thematic emoji prefix on contentName
+
+---
+
+Fill in the <...> placeholders and paste this prompt to generate a complete, import-ready config in one pass.
