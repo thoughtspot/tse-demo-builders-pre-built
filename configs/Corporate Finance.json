@@ -30,7 +30,7 @@
       "id": "spotter",
       "name": "Ask Meridian",
       "enabled": true,
-      "icon": "account-balance",
+      "icon": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/finance-preview-01.svg",
       "homePageType": "html",
       "homePageValue": "<h1>Spotter</h1>",
       "spotterModelId": "16f894c0-ab22-4a46-b4b5-5be433ac28f2"
@@ -71,8 +71,8 @@
       "enabled": true,
       "contentSelection": {
         "type": "collection",
-        "collectionId": "45292ec8-0a7e-48f4-8113-96436f304c87",
-        "collectionName": "Corporate Finance"
+        "collectionId": "560341eb-42d5-4b68-ace5-936fbd7e5a2e",
+        "collectionName": "Industry Demos -> Corporate Finance"
       }
     },
     {
@@ -345,6 +345,6 @@
     "currentUserId": "power-user"
   },
   "version": "1.0.0",
-  "timestamp": "2026-07-29T00:00:00.000Z",
+  "timestamp": "2026-07-29T19:48:33.396Z",
   "description": "TSE Demo Builder Configuration Export"
 }
