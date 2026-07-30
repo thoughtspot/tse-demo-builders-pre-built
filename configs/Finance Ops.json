@@ -30,7 +30,7 @@
       "id": "spotter",
       "name": "Ask the Finance Wizard",
       "enabled": true,
-      "icon": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/finance-ops-preview-01.svg",
+      "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Ccircle cx='8.5' cy='10' r='5.8' fill='%23fef08a' stroke='%23d97706' stroke-width='0.8'/%3E%3Ccircle cx='8.5' cy='10' r='4.6' fill='%23065f46'/%3E%3Cpath d='M 9.9 8.6 A 2.8 2.8 0 1 0 9.9 11.4' fill='none' stroke='%23ffffff' stroke-width='1.1' stroke-linecap='round'/%3E%3Cline x1='6.0' y1='9.1' x2='10.5' y2='9.1' stroke='%23ffffff' stroke-width='1.1' stroke-linecap='round'/%3E%3Cline x1='6.0' y1='10.9' x2='10.5' y2='10.9' stroke='%23ffffff' stroke-width='1.1' stroke-linecap='round'/%3E%3Ccircle cx='15' cy='2' r='0.7' fill='%23f9d923'/%3E%3Cline x1='15' y1='0.8' x2='15' y2='3.2' stroke='%23f9d923' stroke-width='0.5'/%3E%3Cline x1='13.8' y1='2' x2='16.2' y2='2' stroke='%23f9d923' stroke-width='0.5'/%3E%3C/svg%3E",
       "homePageType": "html",
       "homePageValue": "<h1>Spotter</h1>",
       "spotterModelId": "4c2c7e7a-b526-4c00-b48f-de995f7067c9"
@@ -145,7 +145,7 @@
       "topBar": {
         "backgroundColor": "#f0fdf4",
         "foregroundColor": "#065f46",
-        "logoUrl": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/finance-ops-preview-01.svg"
+        "logoUrl": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Ccircle cx='8.5' cy='10' r='5.8' fill='%23fef08a' stroke='%23d97706' stroke-width='0.8'/%3E%3Ccircle cx='8.5' cy='10' r='4.6' fill='%23065f46'/%3E%3Cpath d='M 9.9 8.6 A 2.8 2.8 0 1 0 9.9 11.4' fill='none' stroke='%23ffffff' stroke-width='1.1' stroke-linecap='round'/%3E%3Cline x1='6.0' y1='9.1' x2='10.5' y2='9.1' stroke='%23ffffff' stroke-width='1.1' stroke-linecap='round'/%3E%3Cline x1='6.0' y1='10.9' x2='10.5' y2='10.9' stroke='%23ffffff' stroke-width='1.1' stroke-linecap='round'/%3E%3Ccircle cx='15' cy='2' r='0.7' fill='%23f9d923'/%3E%3Cline x1='15' y1='0.8' x2='15' y2='3.2' stroke='%23f9d923' stroke-width='0.5'/%3E%3Cline x1='13.8' y1='2' x2='16.2' y2='2' stroke='%23f9d923' stroke-width='0.5'/%3E%3C/svg%3E"
       },
       "sidebar": {
         "backgroundColor": "#ffffff",
