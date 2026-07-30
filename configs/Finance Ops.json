@@ -30,7 +30,7 @@
       "id": "spotter",
       "name": "Ask the Finance Wizard",
       "enabled": true,
-      "icon": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/finance-ops-preview-01.svg",
+      "icon": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/finance-ops-preview-02.svg",
       "homePageType": "html",
       "homePageValue": "<h1>Spotter</h1>",
       "spotterModelId": "4c2c7e7a-b526-4c00-b48f-de995f7067c9"
@@ -124,9 +124,7 @@
     },
     "chatbot": {
       "enabled": true,
-      "selectedModelIds": [
-        "4c2c7e7a-b526-4c00-b48f-de995f7067c9"
-      ],
+      "selectedModelIds": ["4c2c7e7a-b526-4c00-b48f-de995f7067c9"],
       "welcomeMessage": "Hello! I'm your AI assistant for questions about EMEA finance operations and project profitability.",
       "position": "bottom-right"
     },
@@ -285,9 +283,7 @@
     "sdkActions": {
       "enabled": true,
       "mode": "hidden",
-      "actions": [
-        "SpotterSidebarFooter"
-      ]
+      "actions": ["SpotterSidebarFooter"]
     }
   },
   "userConfig": {
@@ -307,10 +303,7 @@
             "full-app": true,
             "all-content": true
           },
-          "customMenus": [
-            "custom-1783500000001",
-            "custom-1783500000002"
-          ],
+          "customMenus": ["custom-1783500000001", "custom-1783500000002"],
           "hiddenActions": {
             "enabled": false,
             "actions": []
@@ -332,9 +325,7 @@
             "full-app": false,
             "all-content": true
           },
-          "customMenus": [
-            "custom-1783500000002"
-          ],
+          "customMenus": ["custom-1783500000002"],
           "hiddenActions": {
             "enabled": false,
             "actions": []
