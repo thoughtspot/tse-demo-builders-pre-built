@@ -1,0 +1,350 @@
+{
+  "standardMenus": [
+    {
+      "id": "home",
+      "name": "Home",
+      "enabled": true,
+      "icon": "home",
+      "homePageType": "html",
+      "homePageValue": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Meridian Finance Group - EMEA Finance Operations Analytics</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        body {\n            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n            background-color: #f7fdf9;\n            color: #1a2e1a;\n            line-height: 1.6;\n        }\n\n        .header {\n            background: linear-gradient(135deg, #022c22 0%, #064e3b 50%, #065f46 100%);\n            color: white;\n            padding: 2rem 1rem;\n            box-shadow: 0 4px 6px rgba(6, 95, 70, 0.15);\n        }\n\n        .header-content {\n            max-width: 1200px;\n            margin: 0 auto;\n        }\n\n        .logo {\n            font-size: 2rem;\n            font-weight: 700;\n            margin-bottom: 0.5rem;\n            letter-spacing: -0.5px;\n        }\n\n        .tagline {\n            font-size: 1rem;\n            opacity: 0.9;\n            font-weight: 300;\n        }\n\n        .container {\n            max-width: 1200px;\n            margin: 0 auto;\n            padding: 2rem 1rem;\n        }\n\n        .welcome-section {\n            background: white;\n            border-radius: 12px;\n            padding: 2.5rem;\n            margin-bottom: 2rem;\n            box-shadow: 0 2px 8px rgba(6, 95, 70, 0.08);\n            border-left: 4px solid #065f46;\n        }\n\n        .welcome-section h1 {\n            color: #1a2e1a;\n            font-size: 2rem;\n            margin-bottom: 1rem;\n            font-weight: 600;\n        }\n\n        .welcome-section p {\n            color: #4b7a5a;\n            font-size: 1.1rem;\n            line-height: 1.8;\n            margin-bottom: 1rem;\n        }\n\n        .section-title {\n            font-size: 1.5rem;\n            color: #1a2e1a;\n            margin-bottom: 1.5rem;\n            font-weight: 600;\n            display: flex;\n            align-items: center;\n        }\n\n        .section-title::before {\n            content: '';\n            width: 4px;\n            height: 24px;\n            background: #065f46;\n            margin-right: 12px;\n            border-radius: 2px;\n        }\n\n        .kpi-grid {\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\n            gap: 1.5rem;\n            margin-bottom: 2rem;\n        }\n\n        .kpi-card {\n            background: white;\n            border-radius: 12px;\n            padding: 1.75rem;\n            box-shadow: 0 2px 8px rgba(6, 95, 70, 0.08);\n            transition: transform 0.3s ease, box-shadow 0.3s ease;\n            border-top: 3px solid #065f46;\n        }\n\n        .kpi-card:hover {\n            transform: translateY(-4px);\n            box-shadow: 0 8px 16px rgba(6, 95, 70, 0.15);\n        }\n\n        .kpi-card.accent-1 { border-top-color: #065f46; }\n        .kpi-card.accent-2 { border-top-color: #047857; }\n        .kpi-card.accent-3 { border-top-color: #059669; }\n\n        .kpi-header {\n            display: flex;\n            justify-content: space-between;\n            align-items: flex-start;\n            margin-bottom: 1rem;\n        }\n\n        .kpi-title {\n            font-size: 0.9rem;\n            color: #6b7280;\n            text-transform: uppercase;\n            letter-spacing: 0.5px;\n            font-weight: 500;\n        }\n\n        .kpi-icon {\n            width: 40px;\n            height: 40px;\n            background: linear-gradient(135deg, #065f46 0%, #059669 100%);\n            border-radius: 10px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            color: white;\n            font-size: 1.2rem;\n            font-weight: bold;\n        }\n\n        .kpi-value {\n            font-size: 2.5rem;\n            font-weight: 700;\n            color: #1a2e1a;\n            margin-bottom: 0.5rem;\n        }\n\n        .kpi-change {\n            font-size: 0.9rem;\n            display: flex;\n            align-items: center;\n            gap: 0.5rem;\n        }\n\n        .kpi-change.positive { color: #10b981; }\n        .kpi-change.negative { color: #ef4444; }\n        .kpi-change-icon { font-weight: bold; }\n\n        .quick-stats {\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n            gap: 1rem;\n            margin-top: 2rem;\n        }\n\n        .stat-item {\n            background: linear-gradient(135deg, #f7fdf9 0%, #f0fdf4 100%);\n            padding: 1.25rem;\n            border-radius: 10px;\n            border: 1px solid #d1fae5;\n        }\n\n        .stat-label {\n            font-size: 0.85rem;\n            color: #6b7280;\n            margin-bottom: 0.5rem;\n            font-weight: 500;\n        }\n\n        .stat-value {\n            font-size: 1.5rem;\n            font-weight: 700;\n            color: #065f46;\n        }\n\n        @media (max-width: 768px) {\n            .header { padding: 1.5rem 1rem; }\n            .logo { font-size: 1.5rem; }\n            .welcome-section { padding: 1.5rem; }\n            .welcome-section h1 { font-size: 1.5rem; }\n            .welcome-section p { font-size: 1rem; }\n            .kpi-grid { grid-template-columns: 1fr; }\n            .kpi-value { font-size: 2rem; }\n            .quick-stats { grid-template-columns: 1fr; }\n        }\n\n        .footer {\n            text-align: center;\n            padding: 2rem 1rem;\n            color: #6b7280;\n            font-size: 0.9rem;\n        }\n    </style>\n</head>\n<body>\n    <header class=\"header\">\n        <div class=\"header-content\">\n            <div class=\"logo\">Meridian Finance Group</div>\n            <div class=\"tagline\">EMEA Finance Operations &amp; Business Intelligence Platform</div>\n        </div>\n    </header>\n\n    <main class=\"container\">\n        <section class=\"welcome-section\">\n            <h1>Welcome to Meridian Finance Group Analytics</h1>\n            <p>\n                Your unified EMEA finance operations intelligence platform. Analyse business transaction data,\n                track project profitability, and surface operational insights across all regions with confidence.\n            </p>\n            <p>\n                From invoice-to-cash performance to cross-border project margins, our platform gives your\n                finance teams a real-time view of the numbers that matter most.\n            </p>\n        </section>\n\n        <h2 class=\"section-title\">Key Performance Indicators</h2>\n\n        <div class=\"kpi-grid\">\n            <div class=\"kpi-card accent-1\">\n                <div class=\"kpi-header\">\n                    <div class=\"kpi-title\">Total Revenue</div>\n                    <div class=\"kpi-icon\">€</div>\n                </div>\n                <div class=\"kpi-value\">€24.7M</div>\n                <div class=\"kpi-change positive\">\n                    <span class=\"kpi-change-icon\">▲</span>\n                    <span>11.3% vs last quarter</span>\n                </div>\n            </div>\n\n            <div class=\"kpi-card accent-2\">\n                <div class=\"kpi-header\">\n                    <div class=\"kpi-title\">Project Margin</div>\n                    <div class=\"kpi-icon\">%</div>\n                </div>\n                <div class=\"kpi-value\">34.2%</div>\n                <div class=\"kpi-change positive\">\n                    <span class=\"kpi-change-icon\">▲</span>\n                    <span>2.8 pts vs last quarter</span>\n                </div>\n            </div>\n\n            <div class=\"kpi-card accent-3\">\n                <div class=\"kpi-header\">\n                    <div class=\"kpi-title\">Active Projects</div>\n                    <div class=\"kpi-icon\">📁</div>\n                </div>\n                <div class=\"kpi-value\">1,847</div>\n                <div class=\"kpi-change positive\">\n                    <span class=\"kpi-change-icon\">▲</span>\n                    <span>14% vs last quarter</span>\n                </div>\n            </div>\n\n            <div class=\"kpi-card accent-1\">\n                <div class=\"kpi-header\">\n                    <div class=\"kpi-title\">EBITDA Margin</div>\n                    <div class=\"kpi-icon\">↑</div>\n                </div>\n                <div class=\"kpi-value\">18.3%</div>\n                <div class=\"kpi-change positive\">\n                    <span class=\"kpi-change-icon\">▲</span>\n                    <span>1.5 pts vs last quarter</span>\n                </div>\n            </div>\n\n            <div class=\"kpi-card accent-2\">\n                <div class=\"kpi-header\">\n                    <div class=\"kpi-title\">EMEA Regions Active</div>\n                    <div class=\"kpi-icon\">🌍</div>\n                </div>\n                <div class=\"kpi-value\">28</div>\n                <div class=\"kpi-change positive\">\n                    <span class=\"kpi-change-icon\">▲</span>\n                    <span>3 new this quarter</span>\n                </div>\n            </div>\n\n            <div class=\"kpi-card accent-3\">\n                <div class=\"kpi-header\">\n                    <div class=\"kpi-title\">Forecast Accuracy</div>\n                    <div class=\"kpi-icon\">🎯</div>\n                </div>\n                <div class=\"kpi-value\">96.8%</div>\n                <div class=\"kpi-change positive\">\n                    <span class=\"kpi-change-icon\">▲</span>\n                    <span>0.9% improvement</span>\n                </div>\n            </div>\n        </div>\n\n        <h2 class=\"section-title\">Quick Statistics</h2>\n\n        <div class=\"quick-stats\">\n            <div class=\"stat-item\">\n                <div class=\"stat-label\">Open Invoices</div>\n                <div class=\"stat-value\">342</div>\n            </div>\n            <div class=\"stat-item\">\n                <div class=\"stat-label\">At-Risk Projects</div>\n                <div class=\"stat-value\">18</div>\n            </div>\n            <div class=\"stat-item\">\n                <div class=\"stat-label\">Q3 Closings</div>\n                <div class=\"stat-value\">89</div>\n            </div>\n            <div class=\"stat-item\">\n                <div class=\"stat-label\">Active Clients</div>\n                <div class=\"stat-value\">1,247</div>\n            </div>\n        </div>\n    </main>\n\n    <footer class=\"footer\">\n        <p>&copy; 2024 Meridian Finance Group. All rights reserved. | EMEA Finance Operations Analytics</p>\n    </footer>\n</body>\n</html>",
+      "homePageBackgroundColor": "#064e3b",
+      "homePageMaintainAspectRatio": true
+    },
+    {
+      "id": "favorites",
+      "name": "Favorites",
+      "enabled": false,
+      "icon": "favorites",
+      "homePageType": "html",
+      "homePageValue": "<h1>Favorites</h1>"
+    },
+    {
+      "id": "my-reports",
+      "name": "My Reports",
+      "enabled": true,
+      "icon": "my-reports",
+      "homePageType": "html",
+      "homePageValue": "<h1>My Reports</h1>"
+    },
+    {
+      "id": "spotter",
+      "name": "Ask the Finance Wizard",
+      "enabled": true,
+      "icon": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/finance-ops-preview-01.svg",
+      "homePageType": "html",
+      "homePageValue": "<h1>Spotter</h1>",
+      "spotterModelId": "4c2c7e7a-b526-4c00-b48f-de995f7067c9"
+    },
+    {
+      "id": "search",
+      "name": "Search",
+      "enabled": true,
+      "icon": "search",
+      "homePageType": "html",
+      "homePageValue": "<h1>Search</h1>",
+      "searchDataSource": "4c2c7e7a-b526-4c00-b48f-de995f7067c9"
+    },
+    {
+      "id": "full-app",
+      "name": "Full App",
+      "enabled": false,
+      "icon": "full-app",
+      "homePageType": "html",
+      "homePageValue": "<h1>Full App</h1>"
+    },
+    {
+      "id": "all-content",
+      "name": "All Content",
+      "enabled": false,
+      "icon": "📚",
+      "homePageType": "html",
+      "homePageValue": "<h1>All Content</h1>",
+      "excludeSystemContent": true
+    }
+  ],
+  "customMenus": [
+    {
+      "id": "custom-1783500000001",
+      "name": "Finance Ops Analytics",
+      "description": "Available content for EMEA finance operations analysis.",
+      "icon": "analytics-outlined",
+      "enabled": true,
+      "contentSelection": {
+        "type": "collection",
+        "collectionId": "45292ec8-0a7e-48f4-8113-96436f304c87",
+        "collectionName": "Finance Ops"
+      }
+    },
+    {
+      "id": "custom-1783500000002",
+      "name": "Finance Ops Dashboard",
+      "description": "",
+      "icon": "dashboard-outlined",
+      "enabled": true,
+      "contentSelection": {
+        "type": "direct",
+        "directEmbed": {
+          "type": "liveboard",
+          "contentId": "b5db9b80-70aa-4ee3-9177-3b16115d0513",
+          "contentName": "📊 Finance Ops Dashboard",
+          "contentDescription": ""
+        }
+      }
+    }
+  ],
+  "menuOrder": [
+    "home",
+    "favorites",
+    "my-reports",
+    "spotter",
+    "search",
+    "full-app",
+    "all-content",
+    "custom-1783500000001",
+    "custom-1783500000002"
+  ],
+  "homePageConfig": {
+    "type": "html",
+    "value": "<div style=\"display: flex; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, #022c22 0%, #064e3b 100%); margin: 0; padding: 0;\"><div style=\"text-align: center; padding: 60px 40px; background: rgba(255, 255, 255, 0.95); border-radius: 24px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); max-width: 800px; margin: 20px;\"><h1 style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 48px; font-weight: 700; margin: 0 0 20px 0; background: linear-gradient(135deg, #022c22 0%, #065f46 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: -0.02em;\">Meridian Finance Group</h1><p style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 20px; color: #4a5568; margin: 0; line-height: 1.6; font-weight: 400;\">EMEA Finance Operations &amp; Business Intelligence Platform</p></div></div>",
+    "backgroundColor": "#064e3b",
+    "maintainAspectRatio": true
+  },
+  "appConfig": {
+    "thoughtspotUrl": "https://thoughtspotpmm.thoughtspot.cloud/",
+    "applicationName": "Meridian Finance Group",
+    "logo": "",
+    "earlyAccessFlags": "",
+    "favicon": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCABAAEADASIAAhEBAxEB/8QAGwAAAgMBAQEAAAAAAAAAAAAAAQUDBAYABwL/xAAyEAACAQMBAg0DBQEAAAAAAAABAgMABAURQVEGEhUhIjE1VIKisbLRcaPhEyMygcFh/8QAGQEAAwEBAQAAAAAAAAAAAAAAAgQFAwAB/8QAJREAAQMDAgcBAQAAAAAAAAAAAQACAwQREhMxISIzUVJxkUGx/9oADAMBAAIRAxEAPwDzSCGS4mWGFCzsdABWms+DUCIGvHaR9qqdFH+mhwWtFS1e7YdOQlVO5R+fSnxpmOMWuVIq6t+ZYw2slvIWM7t9xvmhyFjO7fcb5piaFbBjeyT15fI/Uu5DxndvuN80OQ8b3bzt80zRHkbixozsdijU10sUkTcWWN0O5lIogxvZFrS+R+lILzg7CyFrR2jfYrHUH/azs0MkErRSqVdToQa3hpJwltVe3W5UdNDxWO8H8+tZTQjHJqcpap2QY83umHB/sS38XuNMDS7g/wBi2/i9xphRsHKEjP1Xeyuqeys5r64EMC6k9Z2KN5o2FjPkLpYLddWPWdijea29tjExFuBH00I/cfTnB3/T0rpJA3gN1rBTmTidkMdj4cfbiOIasf5OetjUl5aQ3tu0M6gg9R2qd4qeqeTyEOOtjLKdWPMibWNJguc7huqRDWtsdlgJozFM8TdaMVP9UszvZE/h9wpjI7SSNI3OzEk/U0tznZE/h9wqk8ch9KZD1W+wpcB2Lb+L3GmUaNJIsaDVmIUfU0swHY0Hi9xpnDIYZklXrRgw/o1mwcoQzdV1+5/q9KxGLgxdoIohq553faxq9VXH38GQtVnt3BBHONqncaiy+Vt8VbGWZgXP8IwedjSBDnOt+q6CxjLjZVMtcw4eL9RiCja8SLXnB3D/AJ6Vgr+9mv7lpp21J6hsUbhRyN/Pkbpri5bVj1DYo3CqtUYosBc7qPPNqGw2XUvznZM/h9wq/S/N9kzeH3CtJByH0hh6jfYUPBm6VrZ7Vj00PGUbwfz606NYOGaSCVZYmKup1BFaG04QwugF0jI+1lGoNKQzNti5M1VK7IvYL3T2OaWFuNDI8Z3qxFfMkjyMWkdnY7WOppdy1ju8eRvihyzj+8eRvimQ9ncJXRl2xPxX6FUOWcf3jyN8UDmcf3jyN8UQkZ3C90ZPE/FeNJuENyqwLbA9JzxiNwH59K66z0SqRbIXbYzDQCkM0rzytJKxZ26yawqKhuOLU3TUzssnC1l//9k=",
+    "showFooter": true,
+    "showLogo": true,
+    "showVizPicker": false,
+    "authConfig": {
+      "authType": "None",
+      "orgName": "Prod"
+    },
+    "chatbot": {
+      "enabled": true,
+      "selectedModelIds": [
+        "4c2c7e7a-b526-4c00-b48f-de995f7067c9"
+      ],
+      "welcomeMessage": "Hello! I'm your AI assistant for questions about EMEA finance operations and project profitability.",
+      "position": "bottom-right"
+    },
+    "spotterViz": {
+      "enabled": true,
+      "brandName": "Meridian Finance Group"
+    },
+    "faviconSyncEnabled": true
+  },
+  "fullAppConfig": {
+    "showPrimaryNavbar": true,
+    "hideHomepageLeftNav": false
+  },
+  "stylingConfig": {
+    "application": {
+      "topBar": {
+        "backgroundColor": "#f0fdf4",
+        "foregroundColor": "#065f46",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/finance-ops-preview-01.svg"
+      },
+      "sidebar": {
+        "backgroundColor": "#ffffff",
+        "foregroundColor": "#1e3a2a"
+      },
+      "footer": {
+        "backgroundColor": "#ffffff",
+        "foregroundColor": "#4b7a5a"
+      },
+      "dialogs": {
+        "backgroundColor": "#ffffff",
+        "foregroundColor": "#333333"
+      },
+      "buttons": {
+        "primary": {
+          "backgroundColor": "#065f46",
+          "foregroundColor": "#ffffff",
+          "hoverBackgroundColor": "#047857"
+        },
+        "secondary": {
+          "backgroundColor": "#bbf7d0",
+          "foregroundColor": "#065f46",
+          "hoverBackgroundColor": "#86efac"
+        }
+      },
+      "backgrounds": {
+        "mainBackground": "#f7fdf9",
+        "contentBackground": "#ffffff",
+        "borderColor": "#d1fae5"
+      },
+      "typography": {
+        "primaryColor": "#1a2e1a",
+        "secondaryColor": "#4b7a5a",
+        "linkColor": "#065f46"
+      },
+      "selectedTheme": "default"
+    },
+    "embeddedContent": {
+      "strings": {
+        "Spotter": "Finance Wizard",
+        "AI Highlights": "Finance Insights"
+      },
+      "stringIDs": {
+        "spotter.newChatPrompt.landingPage.title": "Welcome to the Meridian Finance Wizard",
+        "spotter.newChatPrompt.landingPage.description1": "Ask your EMEA finance and project profitability questions here."
+      },
+      "cssUrl": "",
+      "iconSpriteUrl": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/finance-ops-01.svg",
+      "customCSS": {
+        "variables": {
+          "--ts-var-root-color": "#1a2e1a",
+          "--ts-var-root-background": "#ffffff",
+          "--ts-var-root-font-family": "Inter, sans-serif",
+          "--ts-var-nav-background": "#f0fdf4",
+          "--ts-var-nav-color": "#065f46",
+          "--ts-var-button--primary-color": "#ffffff",
+          "--ts-var-button--primary-background": "#065f46",
+          "--ts-var-button--primary--hover-background": "#047857",
+          "--ts-var-button--secondary-color": "#065f46",
+          "--ts-var-button--secondary-background": "#bbf7d0",
+          "--ts-var-button--secondary--hover-background": "#86efac",
+          "--ts-var-button--tertiary-color": "#065f46",
+          "--ts-var-button--tertiary-background": "#bbf7d0",
+          "--ts-var-button--tertiary--hover-background": "#86efac",
+          "--ts-var-button-border-radius": "6px",
+          "--ts-var-menu-color": "#1e3a2a",
+          "--ts-var-menu-background": "#ffffff",
+          "--ts-var-menu--hover-background": "#f0fdf4",
+          "--ts-var-viz-title-color": "#1a2e1a",
+          "--ts-var-viz-description-color": "#4b7a5a",
+          "--ts-var-viz-background": "#ffffff",
+          "--ts-var-viz-border-radius": "8px",
+          "--ts-var-chip-color": "#065f46",
+          "--ts-var-chip-background": "#dcfce7",
+          "--ts-var-chip--hover-background": "#bbf7d0",
+          "--ts-var-search-bar-text-font-color": "#1a2e1a",
+          "--ts-var-search-bar-background": "#f7fdf9",
+          "--ts-var-dialog-header-background": "#86efac",
+          "--ts-var-dialog-header-color": "#ffffff",
+          "--ts-var-dialog-body-background": "#ffffff",
+          "--ts-var-dialog-body-color": "#1a2e1a"
+        },
+        "rules_UNSTABLE": {}
+      }
+    },
+    "embedFlags": {
+      "spotterEmbed": {
+        "updatedSpotterChatPrompt": true,
+        "spotterSidebarConfig": {
+          "enablePastConversationsSidebar": true,
+          "spotterAnalystLabel": "Recent Conversations",
+          "spotterSideBarDefaultExpanded": false
+        },
+        "enableStopAnswerGenerationEmbed": true,
+        "spotterChatConfig": {
+          "hideToolResponseCardBranding": true,
+          "toolResponseCardBrandingLabel": "Meridian Finance Group"
+        }
+      },
+      "liveboardEmbed": {
+        "enable2ColumnLayout": true,
+        "isLiveboardMasterpiecesEnabled": true,
+        "spotterChatConfig": {
+          "hideToolResponseCardBranding": true,
+          "toolResponseCardBrandingLabel": "Meridian Finance Group"
+        }
+      },
+      "appEmbed": {
+        "enable2ColumnLayout": true,
+        "isLiveboardStylingAndGroupingEnabled": true,
+        "isLiveboardMasterpiecesEnabled": true
+      }
+    },
+    "embedDisplay": {
+      "hideTitle": false,
+      "hideDescription": true
+    },
+    "doubleClickHandling": {
+      "enabled": true,
+      "showDefaultModal": true,
+      "customJavaScript": "",
+      "modalTitle": "Double-Click Event Data"
+    },
+    "standardActions": [
+      {
+        "standardActionId": "download-pdf",
+        "enabled": true,
+        "position": "MENU",
+        "target": "LIVEBOARD",
+        "params": {
+          "watermarkText": "CONFIDENTIAL",
+          "watermarkOpacity": "0.15",
+          "watermarkColor": "gray"
+        }
+      }
+    ],
+    "sdkActions": {
+      "enabled": true,
+      "mode": "hidden",
+      "actions": [
+        "SpotterSidebarFooter"
+      ]
+    }
+  },
+  "userConfig": {
+    "users": [
+      {
+        "id": "power-user",
+        "name": "Power User",
+        "description": "Full access - can access all features including Search and Full App",
+        "locale": "en",
+        "access": {
+          "standardMenus": {
+            "home": true,
+            "favorites": true,
+            "my-reports": true,
+            "spotter": true,
+            "search": true,
+            "full-app": true,
+            "all-content": true
+          },
+          "customMenus": [
+            "custom-1783500000001",
+            "custom-1783500000002"
+          ],
+          "hiddenActions": {
+            "enabled": false,
+            "actions": []
+          }
+        }
+      },
+      {
+        "id": "basic-user",
+        "name": "Basic User",
+        "description": "Limited access - cannot access Search and Full App",
+        "locale": "en",
+        "access": {
+          "standardMenus": {
+            "home": true,
+            "favorites": true,
+            "my-reports": true,
+            "spotter": true,
+            "search": false,
+            "full-app": false,
+            "all-content": true
+          },
+          "customMenus": [
+            "custom-1783500000002"
+          ],
+          "hiddenActions": {
+            "enabled": false,
+            "actions": []
+          }
+        }
+      }
+    ],
+    "currentUserId": "power-user"
+  },
+  "version": "1.0.0",
+  "timestamp": "2026-07-30T00:00:00.000Z",
+  "description": "TSE Demo Builder Configuration Export"
+}
