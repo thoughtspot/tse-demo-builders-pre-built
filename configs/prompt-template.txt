@@ -13,6 +13,9 @@ Branding
 - App name: <app-name> (used in applicationName, spotterViz.brandName, toolResponseCardBrandingLabel, footer)
 - Spotter menu label: <ask-label> (e.g. "Ask Apex")
 
+
+Note: <industry> = "<industry>"
+
 Icons
 - Check icons/spotter/ for an existing <industry>-01.svg sprite and <industry>-preview-01.svg nav icon.
 - If found: set iconSpriteUrl to the CDN URL for <industry>-01.svg, set the Spotter menu icon and the top bar logoUrl both to the CDN URL for <industry>-preview-01.svg.
