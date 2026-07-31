@@ -71,8 +71,8 @@
       "enabled": true,
       "contentSelection": {
         "type": "collection",
-        "collectionId": "45292ec8-0a7e-48f4-8113-96436f304c87",
-        "collectionName": "Finance Ops"
+        "collectionId": "47648c0ec-71ac-400b-b2ce-3a6d18b35567",
+        "collectionName": "Industry Demos -> Finance Ops"
       }
     },
     {
@@ -143,7 +143,7 @@
       "topBar": {
         "backgroundColor": "#f0fdf4",
         "foregroundColor": "#065f46",
-        "logoUrl": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/finance-ops-preview-01.svg"
+        "logoUrl": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/finance-ops-preview-02.svg"
       },
       "sidebar": {
         "backgroundColor": "#ffffff",
@@ -191,7 +191,7 @@
         "spotter.newChatPrompt.landingPage.description1": "Ask your EMEA finance and project profitability questions here."
       },
       "cssUrl": "",
-      "iconSpriteUrl": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/finance-ops-01.svg",
+      "iconSpriteUrl": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/finance-ops-02.svg",
       "customCSS": {
         "variables": {
           "--ts-var-root-color": "#1a2e1a",
