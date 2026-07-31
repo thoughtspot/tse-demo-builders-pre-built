@@ -71,7 +71,7 @@
       "enabled": true,
       "contentSelection": {
         "type": "collection",
-        "collectionId": "47648c0ec-71ac-400b-b2ce-3a6d18b35567",
+        "collectionId": "7648c0ec-71ac-400b-b2ce-3a6d18b35567",
         "collectionName": "Industry Demos -> Finance Ops"
       }
     },
@@ -124,7 +124,9 @@
     },
     "chatbot": {
       "enabled": true,
-      "selectedModelIds": ["4c2c7e7a-b526-4c00-b48f-de995f7067c9"],
+      "selectedModelIds": [
+        "4c2c7e7a-b526-4c00-b48f-de995f7067c9"
+      ],
       "welcomeMessage": "Hello! I'm your AI assistant for questions about EMEA finance operations and project profitability.",
       "position": "bottom-right"
     },
@@ -283,7 +285,9 @@
     "sdkActions": {
       "enabled": true,
       "mode": "hidden",
-      "actions": ["SpotterSidebarFooter"]
+      "actions": [
+        "SpotterSidebarFooter"
+      ]
     }
   },
   "userConfig": {
@@ -303,7 +307,10 @@
             "full-app": true,
             "all-content": true
           },
-          "customMenus": ["custom-1783500000001", "custom-1783500000002"],
+          "customMenus": [
+            "custom-1783500000001",
+            "custom-1783500000002"
+          ],
           "hiddenActions": {
             "enabled": false,
             "actions": []
@@ -325,7 +332,9 @@
             "full-app": false,
             "all-content": true
           },
-          "customMenus": ["custom-1783500000002"],
+          "customMenus": [
+            "custom-1783500000002"
+          ],
           "hiddenActions": {
             "enabled": false,
             "actions": []
@@ -336,6 +345,6 @@
     "currentUserId": "power-user"
   },
   "version": "1.0.0",
-  "timestamp": "2026-07-30T00:00:00.000Z",
+  "timestamp": "2026-07-31T12:10:47.824Z",
   "description": "TSE Demo Builder Configuration Export"
 }
