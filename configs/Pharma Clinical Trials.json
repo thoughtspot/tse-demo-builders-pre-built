@@ -1,0 +1,350 @@
+{
+  "standardMenus": [
+    {
+      "id": "home",
+      "name": "Home",
+      "enabled": true,
+      "icon": "home",
+      "homePageType": "html",
+      "homePageValue": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>TrialView - Clinical Trials Analytics</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        body {\n            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n            background-color: #f0fdfa;\n            color: #1f2937;\n            line-height: 1.6;\n        }\n\n        .header {\n            background: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #2dd4bf 100%);\n            color: white;\n            padding: 2rem 1rem;\n            box-shadow: 0 4px 6px rgba(15, 118, 110, 0.1);\n        }\n\n        .header-content {\n            max-width: 1200px;\n            margin: 0 auto;\n        }\n\n        .logo {\n            font-size: 2rem;\n            font-weight: 700;\n            margin-bottom: 0.5rem;\n            letter-spacing: -0.5px;\n        }\n\n        .tagline {\n            font-size: 1rem;\n            opacity: 0.95;\n            font-weight: 300;\n        }\n\n        .container {\n            max-width: 1200px;\n            margin: 0 auto;\n            padding: 2rem 1rem;\n        }\n\n        .welcome-section {\n            background: white;\n            border-radius: 12px;\n            padding: 2.5rem;\n            margin-bottom: 2rem;\n            box-shadow: 0 2px 8px rgba(15, 118, 110, 0.08);\n            border-left: 4px solid #0d9488;\n        }\n\n        .welcome-section h1 {\n            color: #1f2937;\n            font-size: 2rem;\n            margin-bottom: 1rem;\n            font-weight: 600;\n        }\n\n        .welcome-section p {\n            color: #4b5563;\n            font-size: 1.1rem;\n            line-height: 1.8;\n            margin-bottom: 1rem;\n        }\n\n        .section-title {\n            font-size: 1.5rem;\n            color: #1f2937;\n            margin-bottom: 1.5rem;\n            font-weight: 600;\n            display: flex;\n            align-items: center;\n        }\n\n        .section-title::before {\n            content: '';\n            width: 4px;\n            height: 24px;\n            background: #0d9488;\n            margin-right: 12px;\n            border-radius: 2px;\n        }\n\n        .kpi-grid {\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\n            gap: 1.5rem;\n            margin-bottom: 2rem;\n        }\n\n        .kpi-card {\n            background: white;\n            border-radius: 12px;\n            padding: 1.75rem;\n            box-shadow: 0 2px 8px rgba(15, 118, 110, 0.08);\n            transition: transform 0.3s ease, box-shadow 0.3s ease;\n            border-top: 3px solid #0d9488;\n        }\n\n        .kpi-card:hover {\n            transform: translateY(-4px);\n            box-shadow: 0 8px 16px rgba(15, 118, 110, 0.15);\n        }\n\n        .kpi-card.accent-1 {\n            border-top-color: #0d9488;\n        }\n\n        .kpi-card.accent-2 {\n            border-top-color: #0f766e;\n        }\n\n        .kpi-card.accent-3 {\n            border-top-color: #2dd4bf;\n        }\n\n        .kpi-header {\n            display: flex;\n            justify-content: space-between;\n            align-items: flex-start;\n            margin-bottom: 1rem;\n        }\n\n        .kpi-title {\n            font-size: 0.9rem;\n            color: #6b7280;\n            text-transform: uppercase;\n            letter-spacing: 0.5px;\n            font-weight: 500;\n        }\n\n        .kpi-icon {\n            width: 40px;\n            height: 40px;\n            background: linear-gradient(135deg, #0d9488 0%, #2dd4bf 100%);\n            border-radius: 10px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            color: white;\n            font-size: 1.2rem;\n            font-weight: bold;\n        }\n\n        .kpi-value {\n            font-size: 2.5rem;\n            font-weight: 700;\n            color: #1f2937;\n            margin-bottom: 0.5rem;\n        }\n\n        .kpi-change {\n            font-size: 0.9rem;\n            display: flex;\n            align-items: center;\n            gap: 0.5rem;\n        }\n\n        .kpi-change.positive {\n            color: #10b981;\n        }\n\n        .kpi-change.negative {\n            color: #ef4444;\n        }\n\n        .kpi-change-icon {\n            font-weight: bold;\n        }\n\n        .quick-stats {\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n            gap: 1rem;\n            margin-top: 2rem;\n        }\n\n        .stat-item {\n            background: linear-gradient(135deg, #f0fdfa 0%, #e6fffa 100%);\n            padding: 1.25rem;\n            border-radius: 10px;\n            border: 1px solid #99f6e4;\n        }\n\n        .stat-label {\n            font-size: 0.85rem;\n            color: #6b7280;\n            margin-bottom: 0.5rem;\n            font-weight: 500;\n        }\n\n        .stat-value {\n            font-size: 1.5rem;\n            font-weight: 700;\n            color: #0d9488;\n        }\n\n        .footer {\n            text-align: center;\n            padding: 2rem 1rem;\n            color: #6b7280;\n            font-size: 0.9rem;\n        }\n\n        @media (max-width: 768px) {\n            .header {\n                padding: 1.5rem 1rem;\n            }\n\n            .logo {\n                font-size: 1.5rem;\n            }\n\n            .welcome-section {\n                padding: 1.5rem;\n            }\n\n            .welcome-section h1 {\n                font-size: 1.5rem;\n            }\n\n            .welcome-section p {\n                font-size: 1rem;\n            }\n\n            .kpi-grid {\n                grid-template-columns: 1fr;\n            }\n\n            .kpi-value {\n                font-size: 2rem;\n            }\n\n            .quick-stats {\n                grid-template-columns: 1fr;\n            }\n        }\n    </style>\n</head>\n<body>\n    <header class=\"header\">\n        <div class=\"header-content\">\n            <div class=\"logo\">TrialView</div>\n            <div class=\"tagline\">Clinical Trials Analytics Platform</div>\n        </div>\n    </header>\n\n    <main class=\"container\">\n        <section class=\"welcome-section\">\n            <h1>Welcome to TrialView Analytics</h1>\n            <p>\n                Your clinical trials intelligence platform. Monitor study activities across the full pipeline &mdash;\n                tracking what&rsquo;s recruiting, what&rsquo;s completing, and where capacity is concentrated.\n                Gain real-time visibility into enrollment health, phase progression, and sponsor engagement.\n            </p>\n            <p>\n                Identify pipeline gaps before they become delays, assess intervention types that drive the most\n                trial volume, and surface the sponsor sources powering your organization&rsquo;s research portfolio.\n            </p>\n        </section>\n\n        <h2 class=\"section-title\">Key Performance Indicators</h2>\n\n        <div class=\"kpi-grid\">\n            <div class=\"kpi-card accent-1\">\n                <div class=\"kpi-header\">\n                    <div class=\"kpi-title\">Active Studies</div>\n                    <div class=\"kpi-icon\">&#x1F52C;</div>\n                </div>\n                <div class=\"kpi-value\">847</div>\n                <div class=\"kpi-change positive\">\n                    <span class=\"kpi-change-icon\">&#9650;</span>\n                    <span>12.3% vs last quarter</span>\n                </div>\n            </div>\n\n            <div class=\"kpi-card accent-2\">\n                <div class=\"kpi-header\">\n                    <div class=\"kpi-title\">Enrollment Rate</div>\n                    <div class=\"kpi-icon\">%</div>\n                </div>\n                <div class=\"kpi-value\">76.4%</div>\n                <div class=\"kpi-change positive\">\n                    <span class=\"kpi-change-icon\">&#9650;</span>\n                    <span>4.2% above target</span>\n                </div>\n            </div>\n\n            <div class=\"kpi-card accent-3\">\n                <div class=\"kpi-header\">\n                    <div class=\"kpi-title\">Recruiting Sites</div>\n                    <div class=\"kpi-icon\">&#x1F3E5;</div>\n                </div>\n                <div class=\"kpi-value\">312</div>\n                <div class=\"kpi-change positive\">\n                    <span class=\"kpi-change-icon\">&#9650;</span>\n                    <span>18 new this quarter</span>\n                </div>\n            </div>\n\n            <div class=\"kpi-card accent-1\">\n                <div class=\"kpi-header\">\n                    <div class=\"kpi-title\">Avg Trial Duration</div>\n                    <div class=\"kpi-icon\">&#x23F1;</div>\n                </div>\n                <div class=\"kpi-value\">14.2mo</div>\n                <div class=\"kpi-change positive\">\n                    <span class=\"kpi-change-icon\">&#9660;</span>\n                    <span>8% faster than prior cohort</span>\n                </div>\n            </div>\n\n            <div class=\"kpi-card accent-2\">\n                <div class=\"kpi-header\">\n                    <div class=\"kpi-title\">Unique Sponsors</div>\n                    <div class=\"kpi-icon\">&#x1F3E2;</div>\n                </div>\n                <div class=\"kpi-value\">94</div>\n                <div class=\"kpi-change positive\">\n                    <span class=\"kpi-change-icon\">&#9650;</span>\n                    <span>7 new this year</span>\n                </div>\n            </div>\n\n            <div class=\"kpi-card accent-3\">\n                <div class=\"kpi-header\">\n                    <div class=\"kpi-title\">Phase Completion Rate</div>\n                    <div class=\"kpi-icon\">&#x1F3AF;</div>\n                </div>\n                <div class=\"kpi-value\">68.0%</div>\n                <div class=\"kpi-change positive\">\n                    <span class=\"kpi-change-icon\">&#9650;</span>\n                    <span>3.1% vs prior year</span>\n                </div>\n            </div>\n        </div>\n\n        <h2 class=\"section-title\">Quick Statistics</h2>\n\n        <div class=\"quick-stats\">\n            <div class=\"stat-item\">\n                <div class=\"stat-label\">Pending IRB Review</div>\n                <div class=\"stat-value\">43</div>\n            </div>\n            <div class=\"stat-item\">\n                <div class=\"stat-label\">Phase I Active</div>\n                <div class=\"stat-value\">128</div>\n            </div>\n            <div class=\"stat-item\">\n                <div class=\"stat-label\">New Enrollments (30d)</div>\n                <div class=\"stat-value\">2,847</div>\n            </div>\n            <div class=\"stat-item\">\n                <div class=\"stat-label\">Multi-Site Trials</div>\n                <div class=\"stat-value\">203</div>\n            </div>\n        </div>\n    </main>\n\n    <footer class=\"footer\">\n        <p>&copy; 2024 TrialView. All rights reserved. | Pharma Clinical Trials Analytics</p>\n    </footer>\n</body>\n</html>",
+      "homePageBackgroundColor": "#0d9488",
+      "homePageMaintainAspectRatio": true
+    },
+    {
+      "id": "favorites",
+      "name": "Favorites",
+      "enabled": false,
+      "icon": "favorites",
+      "homePageType": "html",
+      "homePageValue": "<h1>Favorites</h1>"
+    },
+    {
+      "id": "my-reports",
+      "name": "My Reports",
+      "enabled": true,
+      "icon": "my-reports",
+      "homePageType": "html",
+      "homePageValue": "<h1>My Reports</h1>"
+    },
+    {
+      "id": "spotter",
+      "name": "Ask TrialView",
+      "enabled": true,
+      "icon": "biotech",
+      "homePageType": "html",
+      "homePageValue": "<h1>Spotter</h1>",
+      "spotterModelId": "c3a9946c-30e1-411d-a32e-71ca417530ec"
+    },
+    {
+      "id": "search",
+      "name": "Search",
+      "enabled": true,
+      "icon": "search",
+      "homePageType": "html",
+      "homePageValue": "<h1>Search</h1>",
+      "searchDataSource": "c3a9946c-30e1-411d-a32e-71ca417530ec"
+    },
+    {
+      "id": "full-app",
+      "name": "Full App",
+      "enabled": false,
+      "icon": "full-app",
+      "homePageType": "html",
+      "homePageValue": "<h1>Full App</h1>"
+    },
+    {
+      "id": "all-content",
+      "name": "All Content",
+      "enabled": false,
+      "icon": "📚",
+      "homePageType": "html",
+      "homePageValue": "<h1>All Content</h1>",
+      "excludeSystemContent": true
+    }
+  ],
+  "customMenus": [
+    {
+      "id": "custom-1783632000001",
+      "name": "Pharma Clinical Trials Analytics",
+      "description": "Available content for clinical trials analysis.",
+      "icon": "analytics-outlined",
+      "enabled": true,
+      "contentSelection": {
+        "type": "collection",
+        "collectionId": "b91066aa-a7f4-4887-b884-eac3688dc00b",
+        "collectionName": "Pharma Clinical Trials"
+      }
+    },
+    {
+      "id": "custom-1783632001001",
+      "name": "Pharma Clinical Trials Dashboard",
+      "description": "",
+      "icon": "dashboard-outlined",
+      "enabled": true,
+      "contentSelection": {
+        "type": "direct",
+        "directEmbed": {
+          "type": "liveboard",
+          "contentId": "1fe5605f-bb4c-4db5-8bcb-7bef454d6e78",
+          "contentName": "🧬 Pharma Clinical Trials Dashboard",
+          "contentDescription": ""
+        }
+      }
+    }
+  ],
+  "menuOrder": [
+    "home",
+    "favorites",
+    "my-reports",
+    "spotter",
+    "search",
+    "full-app",
+    "all-content",
+    "custom-1783632000001",
+    "custom-1783632001001"
+  ],
+  "homePageConfig": {
+    "type": "html",
+    "value": "<div style=\"display: flex; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, #0f766e 0%, #0d9488 100%); margin: 0; padding: 0;\"><div style=\"text-align: center; padding: 60px 40px; background: rgba(255, 255, 255, 0.95); border-radius: 24px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); max-width: 800px; margin: 20px;\"><h1 style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 48px; font-weight: 700; margin: 0 0 20px 0; background: linear-gradient(135deg, #0f766e 0%, #0d9488 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: -0.02em;\">Welcome to TSE Demo Builder</h1><p style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 20px; color: #4a5568; margin: 0; line-height: 1.6; font-weight: 400;\">Build and customize your ThoughtSpot embedded demos with ease</p></div></div>",
+    "backgroundColor": "#0d9488",
+    "maintainAspectRatio": true
+  },
+  "appConfig": {
+    "thoughtspotUrl": "https://thoughtspotpmm.thoughtspot.cloud/",
+    "applicationName": "TrialView",
+    "logo": "",
+    "earlyAccessFlags": "",
+    "favicon": "data:image/jpeg;base64,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",
+    "showFooter": true,
+    "showLogo": true,
+    "showVizPicker": false,
+    "authConfig": {
+      "authType": "None",
+      "orgName": "Prod"
+    },
+    "chatbot": {
+      "enabled": true,
+      "selectedModelIds": [
+        "c3a9946c-30e1-411d-a32e-71ca417530ec"
+      ],
+      "welcomeMessage": "Hello! I'm your AI assistant for questions about clinical trials.",
+      "position": "bottom-right"
+    },
+    "spotterViz": {
+      "enabled": true,
+      "brandName": "TrialView"
+    },
+    "faviconSyncEnabled": true
+  },
+  "fullAppConfig": {
+    "showPrimaryNavbar": true,
+    "hideHomepageLeftNav": false
+  },
+  "stylingConfig": {
+    "application": {
+      "topBar": {
+        "backgroundColor": "#f0fdfa",
+        "foregroundColor": "#134e4a",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/pharma-clinical-trials-preview-01.svg"
+      },
+      "sidebar": {
+        "backgroundColor": "#ffffff",
+        "foregroundColor": "#134e4a"
+      },
+      "footer": {
+        "backgroundColor": "#ffffff",
+        "foregroundColor": "#4b7a76"
+      },
+      "dialogs": {
+        "backgroundColor": "#ffffff",
+        "foregroundColor": "#333333"
+      },
+      "buttons": {
+        "primary": {
+          "backgroundColor": "#0f766e",
+          "foregroundColor": "#ffffff",
+          "hoverBackgroundColor": "#115e59"
+        },
+        "secondary": {
+          "backgroundColor": "#99f6e4",
+          "foregroundColor": "#0f766e",
+          "hoverBackgroundColor": "#5eead4"
+        }
+      },
+      "backgrounds": {
+        "mainBackground": "#f0fdfa",
+        "contentBackground": "#ffffff",
+        "borderColor": "#99f6e4"
+      },
+      "typography": {
+        "primaryColor": "#134e4a",
+        "secondaryColor": "#4b7a76",
+        "linkColor": "#0f766e"
+      },
+      "selectedTheme": "default"
+    },
+    "embeddedContent": {
+      "strings": {
+        "Spotter": "Ask TrialView",
+        "AI Highlights": "Trial Insights"
+      },
+      "stringIDs": {
+        "spotter.newChatPrompt.landingPage.title": "Welcome to the TrialView AI Helper",
+        "spotter.newChatPrompt.landingPage.description1": "Ask your clinical trials questions here."
+      },
+      "cssUrl": "",
+      "iconSpriteUrl": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/pharma-clinical-trials-01.svg",
+      "customCSS": {
+        "variables": {
+          "--ts-var-root-color": "#134e4a",
+          "--ts-var-root-background": "#ffffff",
+          "--ts-var-root-font-family": "Inter, sans-serif",
+          "--ts-var-nav-background": "#f0fdfa",
+          "--ts-var-nav-color": "#134e4a",
+          "--ts-var-button--primary-color": "#ffffff",
+          "--ts-var-button--primary-background": "#0f766e",
+          "--ts-var-button--primary--hover-background": "#115e59",
+          "--ts-var-button--secondary-color": "#0f766e",
+          "--ts-var-button--secondary-background": "#99f6e4",
+          "--ts-var-button--secondary--hover-background": "#5eead4",
+          "--ts-var-button--tertiary-color": "#0f766e",
+          "--ts-var-button--tertiary-background": "#99f6e4",
+          "--ts-var-button--tertiary--hover-background": "#5eead4",
+          "--ts-var-button-border-radius": "6px",
+          "--ts-var-menu-color": "#134e4a",
+          "--ts-var-menu-background": "#ffffff",
+          "--ts-var-menu--hover-background": "#f0fdfa",
+          "--ts-var-viz-title-color": "#134e4a",
+          "--ts-var-viz-description-color": "#4b7a76",
+          "--ts-var-viz-background": "#ffffff",
+          "--ts-var-viz-border-radius": "8px",
+          "--ts-var-chip-color": "#0f766e",
+          "--ts-var-chip-background": "#ccfbf1",
+          "--ts-var-chip--hover-background": "#99f6e4",
+          "--ts-var-search-bar-text-font-color": "#134e4a",
+          "--ts-var-search-bar-background": "#f0fdfa",
+          "--ts-var-dialog-header-background": "#0d9488",
+          "--ts-var-dialog-header-color": "#ffffff",
+          "--ts-var-dialog-body-background": "#ffffff",
+          "--ts-var-dialog-body-color": "#134e4a"
+        },
+        "rules_UNSTABLE": {}
+      }
+    },
+    "embedFlags": {
+      "spotterEmbed": {
+        "updatedSpotterChatPrompt": true,
+        "spotterSidebarConfig": {
+          "enablePastConversationsSidebar": true,
+          "spotterAnalystLabel": "Recent Conversations",
+          "spotterSideBarDefaultExpanded": false
+        },
+        "enableStopAnswerGenerationEmbed": true,
+        "spotterChatConfig": {
+          "hideToolResponseCardBranding": true,
+          "toolResponseCardBrandingLabel": "TrialView"
+        }
+      },
+      "liveboardEmbed": {
+        "enable2ColumnLayout": true,
+        "isLiveboardMasterpiecesEnabled": true,
+        "spotterChatConfig": {
+          "hideToolResponseCardBranding": true,
+          "toolResponseCardBrandingLabel": "TrialView"
+        }
+      },
+      "appEmbed": {
+        "enable2ColumnLayout": true,
+        "isLiveboardStylingAndGroupingEnabled": true,
+        "isLiveboardMasterpiecesEnabled": true
+      }
+    },
+    "embedDisplay": {
+      "hideTitle": false,
+      "hideDescription": true
+    },
+    "doubleClickHandling": {
+      "enabled": true,
+      "showDefaultModal": true,
+      "customJavaScript": "",
+      "modalTitle": "Double-Click Event Data"
+    },
+    "standardActions": [
+      {
+        "standardActionId": "download-pdf",
+        "enabled": true,
+        "position": "MENU",
+        "target": "LIVEBOARD",
+        "params": {
+          "watermarkText": "CONFIDENTIAL",
+          "watermarkOpacity": "0.15",
+          "watermarkColor": "gray"
+        }
+      }
+    ],
+    "sdkActions": {
+      "enabled": true,
+      "mode": "hidden",
+      "actions": [
+        "SpotterSidebarFooter"
+      ]
+    }
+  },
+  "userConfig": {
+    "users": [
+      {
+        "id": "power-user",
+        "name": "Power User",
+        "description": "Full access - can access all features including Search and Full App",
+        "locale": "en",
+        "access": {
+          "standardMenus": {
+            "home": true,
+            "favorites": true,
+            "my-reports": true,
+            "spotter": true,
+            "search": true,
+            "full-app": true,
+            "all-content": true
+          },
+          "customMenus": [
+            "custom-1783632000001",
+            "custom-1783632001001"
+          ],
+          "hiddenActions": {
+            "enabled": false,
+            "actions": []
+          }
+        }
+      },
+      {
+        "id": "basic-user",
+        "name": "Basic User",
+        "description": "Limited access - cannot access Search and Full App",
+        "locale": "en",
+        "access": {
+          "standardMenus": {
+            "home": true,
+            "favorites": true,
+            "my-reports": true,
+            "spotter": true,
+            "search": false,
+            "full-app": false,
+            "all-content": true
+          },
+          "customMenus": [
+            "custom-1783632001001"
+          ],
+          "hiddenActions": {
+            "enabled": false,
+            "actions": []
+          }
+        }
+      }
+    ],
+    "currentUserId": "power-user"
+  },
+  "version": "1.0.0",
+  "timestamp": "2026-08-04T00:00:00.000Z",
+  "description": "TSE Demo Builder Configuration Export"
+}
