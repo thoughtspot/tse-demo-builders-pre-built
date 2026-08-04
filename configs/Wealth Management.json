@@ -28,7 +28,7 @@
     },
     {
       "id": "spotter",
-      "name": "Ask Aegis",
+      "name": "Ask Wealth AI",
       "enabled": true,
       "icon": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/wealth-mgmt-preview-01.svg",
       "homePageType": "html",
@@ -71,8 +71,8 @@
       "enabled": true,
       "contentSelection": {
         "type": "collection",
-        "collectionId": "45292ec8-0a7e-48f4-8113-96436f304c87",
-        "collectionName": "Wealth Management"
+        "collectionId": "ac6841da-bcac-4e0f-9f40-01819e102f5a",
+        "collectionName": "Industry Demos -> Wealth Management"
       }
     },
     {
@@ -127,7 +127,7 @@
       "selectedModelIds": [
         "71e451f0-c9c1-4a33-8546-127603742a06"
       ],
-      "welcomeMessage": "Hello! I'm Aegis, your AI assistant for wealth management analytics.",
+      "welcomeMessage": "Hello! I'm Wealth AI, your AI assistant for wealth management analytics.",
       "position": "bottom-right"
     },
     "spotterViz": {
@@ -185,11 +185,11 @@
     },
     "embeddedContent": {
       "strings": {
-        "Spotter": "Ask Aegis",
-        "AI Highlights": "Aegis Insights"
+        "Spotter": "Ask Wealth AI",
+        "AI Highlights": "Wealth AI Insights"
       },
       "stringIDs": {
-        "spotter.newChatPrompt.landingPage.title": "Welcome to Aegis, your Vanderburgh & Sterling AI Assistant",
+        "spotter.newChatPrompt.landingPage.title": "Welcome to Wealth AI, your AI Assistant",
         "spotter.newChatPrompt.landingPage.description1": "Ask your wealth management questions here."
       },
       "cssUrl": "",
@@ -246,6 +246,7 @@
         }
       },
       "liveboardEmbed": {
+        "updateSpotterChatPrompt": true,
         "enable2ColumnLayout": true,
         "isLiveboardMasterpiecesEnabled": true,
         "spotterChatConfig": {
@@ -345,6 +346,6 @@
     "currentUserId": "power-user"
   },
   "version": "1.0.0",
-  "timestamp": "2026-07-30T00:00:00.000Z",
+  "timestamp": "2026-08-04T13:45:02.171Z",
   "description": "TSE Demo Builder Configuration Export"
 }

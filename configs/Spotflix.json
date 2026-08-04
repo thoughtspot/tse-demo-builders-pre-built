@@ -71,8 +71,8 @@
       "enabled": true,
       "contentSelection": {
         "type": "collection",
-        "collectionId": "45292ec8-0a7e-48f4-8113-96436f304c87",
-        "collectionName": "Spotflix Marketing"
+        "collectionId": "fb5a4490-20b0-44cd-aeef-1b5368919193",
+        "collectionName": "Industry Demos -> Spotflix Marketing"
       }
     },
     {
@@ -177,7 +177,7 @@
         "borderColor": "#2a2a2a"
       },
       "typography": {
-        "primaryColor": "#e5e5e5",
+        "primaryColor": "#808080",
         "secondaryColor": "#808080",
         "linkColor": "#e50914"
       },
@@ -196,37 +196,43 @@
       "iconSpriteUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPHN5bWJvbCBpZD0icmQtaWNvbi1zcG90dGVyIiB2aWV3Qm94PSIwIDAgMTggMTgiPgogICAgICA8Y2lyY2xlIGN4PSI5IiBjeT0iOS41IiByPSI0LjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2U1MDkxNCIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICAgIDxjaXJjbGUgY3g9IjkiIGN5PSI5LjUiIHI9IjIuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZTUwOTE0IiBzdHJva2Utd2lkdGg9IjAuOCIvPgogICAgICA8Y2lyY2xlIGN4PSI3LjUiIGN5PSI4IiByPSIwLjgiIGZpbGw9IiNlNTA5MTQiLz4KICAgICAgPGNpcmNsZSBjeD0iMTAuNSIgY3k9IjgiIHI9IjAuOCIgZmlsbD0iI2U1MDkxNCIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjcuNSw4IDEwLjUsOCA5LDEwLjUiIGZpbGw9IiNlNTA5MTQiLz4KICAgICAgPGNpcmNsZSBjeD0iMTUiIGN5PSIyIiByPSIwLjciIGZpbGw9IiNmOWQ5MjMiLz4KICAgICAgPGxpbmUgeDE9IjE1IiB5MT0iMC44IiB4Mj0iMTUiIHkyPSIzLjIiIHN0cm9rZT0iI2Y5ZDkyMyIgc3Ryb2tlLXdpZHRoPSIwLjUiLz4KICAgICAgPGxpbmUgeDE9IjEzLjgiIHkxPSIyIiB4Mj0iMTYuMiIgeTI9IjIiIHN0cm9rZT0iI2Y5ZDkyMyIgc3Ryb2tlLXdpZHRoPSIwLjUiLz4KICAgIDwvc3ltYm9sPgogIDwvZGVmcz4KPC9zdmc+Cg==",
       "customCSS": {
         "variables": {
-          "--ts-var-root-color": "#e5e5e5",
-          "--ts-var-root-background": "#1a1a1a",
+          "--ts-var-root-color": "#1f1f1f",
+          "--ts-var-root-background": "#f7f7f7",
           "--ts-var-root-font-family": "Inter, sans-serif",
-          "--ts-var-nav-background": "#141414",
+          "--ts-var-nav-background": "#ffffff",
           "--ts-var-nav-color": "#e50914",
           "--ts-var-button--primary-color": "#ffffff",
           "--ts-var-button--primary-background": "#e50914",
           "--ts-var-button--primary--hover-background": "#cc0000",
-          "--ts-var-button--secondary-color": "#e50914",
-          "--ts-var-button--secondary-background": "#2a2a2a",
-          "--ts-var-button--secondary--hover-background": "#333333",
-          "--ts-var-button--tertiary-color": "#e50914",
-          "--ts-var-button--tertiary-background": "#2a2a2a",
-          "--ts-var-button--tertiary--hover-background": "#333333",
+          "--ts-var-button--secondary-color": "#b00610",
+          "--ts-var-button--secondary-background": "#f1f1f1",
+          "--ts-var-button--secondary--hover-background": "#e7e7e7",
+          "--ts-var-button--tertiary-color": "#c10b15",
+          "--ts-var-button--tertiary-background": "#f5f5f5",
+          "--ts-var-button--tertiary--hover-background": "#ebebeb",
           "--ts-var-button-border-radius": "6px",
-          "--ts-var-menu-color": "#e5e5e5",
-          "--ts-var-menu-background": "#1a1a1a",
-          "--ts-var-menu--hover-background": "#2a2a2a",
-          "--ts-var-viz-title-color": "#e5e5e5",
-          "--ts-var-viz-description-color": "#808080",
-          "--ts-var-viz-background": "#1a1a1a",
+          "--ts-var-menu-color": "#222222",
+          "--ts-var-menu-background": "#ffffff",
+          "--ts-var-menu--hover-background": "#f0f0f0",
+          "--ts-var-viz-title-color": "#1f1f1f",
+          "--ts-var-viz-description-color": "#5f5f5f",
+          "--ts-var-viz-background": "#ffffff",
           "--ts-var-viz-border-radius": "8px",
-          "--ts-var-chip-color": "#e50914",
-          "--ts-var-chip-background": "#2a0000",
-          "--ts-var-chip--hover-background": "#3a0000",
-          "--ts-var-search-bar-text-font-color": "#e5e5e5",
-          "--ts-var-search-bar-background": "#2a2a2a",
+          "--ts-var-chip-color": "#b00610",
+          "--ts-var-chip-background": "#fdecee",
+          "--ts-var-chip--hover-background": "#f9d7db",
+          "--ts-var-search-bar-text-font-color": "#1f1f1f",
+          "--ts-var-search-bar-background": "#f3f3f3",
           "--ts-var-dialog-header-background": "#e50914",
           "--ts-var-dialog-header-color": "#ffffff",
-          "--ts-var-dialog-body-background": "#1a1a1a",
-          "--ts-var-dialog-body-color": "#e5e5e5"
+          "--ts-var-dialog-body-background": "#ffffff",
+          "--ts-var-dialog-body-color": "#1f1f1f",
+          "--ts-var-axis-title-color": "#3a3a3a",
+          "--ts-var-axis-data-label-color": "#4a4a4a",
+          "--ts-var-chart-heatmap-legend-title-color": "#3a3a3a",
+          "--ts-var-chart-heatmap-legend-label-color": "#4a4a4a",
+          "--ts-var-chart-treemap-legend-title-color": "#3a3a3a",
+          "--ts-var-chart-treemap-legend-label-color": "#4a4a4a"
         },
         "rules_UNSTABLE": {}
       }
@@ -246,6 +252,7 @@
         }
       },
       "liveboardEmbed": {
+        "updateSpotterChatPrompt": true,
         "enable2ColumnLayout": true,
         "isLiveboardMasterpiecesEnabled": true,
         "spotterChatConfig": {
@@ -345,6 +352,6 @@
     "currentUserId": "power-user"
   },
   "version": "1.0.0",
-  "timestamp": "2026-08-03T00:00:00.000Z",
+  "timestamp": "2026-08-04T13:35:23.154Z",
   "description": "TSE Demo Builder Configuration Export"
 }
