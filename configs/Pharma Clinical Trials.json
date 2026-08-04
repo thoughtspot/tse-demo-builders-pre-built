@@ -30,10 +30,10 @@
       "id": "spotter",
       "name": "Ask TrialView",
       "enabled": true,
-      "icon": "biotech",
+      "icon": "https://cdn.jsdelivr.net/gh/thoughtspot/tse-demo-builders-pre-built/icons/spotter/pharma-clinical-trials-preview-01.svg",
       "homePageType": "html",
       "homePageValue": "<h1>Spotter</h1>",
-      "spotterModelId": "c3a9946c-30e1-411d-a32e-71ca417530ec"
+      "spotterModelId": "b56d285d-48aa-4732-a0ec-02d9e4c5155c"
     },
     {
       "id": "search",
@@ -42,7 +42,7 @@
       "icon": "search",
       "homePageType": "html",
       "homePageValue": "<h1>Search</h1>",
-      "searchDataSource": "c3a9946c-30e1-411d-a32e-71ca417530ec"
+      "searchDataSource": "b56d285d-48aa-4732-a0ec-02d9e4c5155c"
     },
     {
       "id": "full-app",
@@ -71,7 +71,7 @@
       "enabled": true,
       "contentSelection": {
         "type": "collection",
-        "collectionId": "b91066aa-a7f4-4887-b884-eac3688dc00b",
+        "collectionId": "91b5113c-92d0-4391-b35c-0926ad67a073",
         "collectionName": "Pharma Clinical Trials"
       }
     },
@@ -85,7 +85,7 @@
         "type": "direct",
         "directEmbed": {
           "type": "liveboard",
-          "contentId": "1fe5605f-bb4c-4db5-8bcb-7bef454d6e78",
+          "contentId": "e799b1a4-f961-4984-8170-5ee8c2477db8",
           "contentName": "🧬 Pharma Clinical Trials Dashboard",
           "contentDescription": ""
         }
@@ -125,7 +125,7 @@
     "chatbot": {
       "enabled": true,
       "selectedModelIds": [
-        "c3a9946c-30e1-411d-a32e-71ca417530ec"
+        "b56d285d-48aa-4732-a0ec-02d9e4c5155c"
       ],
       "welcomeMessage": "Hello! I'm your AI assistant for questions about clinical trials.",
       "position": "bottom-right"
