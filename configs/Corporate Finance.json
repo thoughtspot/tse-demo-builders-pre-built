@@ -246,7 +246,7 @@
         }
       },
       "liveboardEmbed": {
-        "updateSpotterChatPrompt": true,
+        "updatedSpotterChatPrompt": true,
         "enable2ColumnLayout": true,
         "isLiveboardMasterpiecesEnabled": true,
         "spotterChatConfig": {
