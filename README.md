@@ -14,7 +14,15 @@ Contains pre-built TSE Demo Builder configurations in JSON format for industry-s
 - **Commercial Insurance** — Insurance operations and underwriting analytics demo
 - **Corporate Finance** — Corporate financial planning and reporting demo
 - **Finance Ops** — EMEA finance operations and project profitability demo
+- **Healthcare Clinical Ops** — Healthcare clinical operations and patient analytics demo
+- **HR Analytics** — Human resources workforce analytics demo
+- **IoT Manufacturing** — IoT and manufacturing operations analytics demo
+- **Pharma Clinical Trials** — Pharmaceutical clinical trials and research analytics demo
 - **Pharma Supply Chain** — Pharmaceutical supply chain and inventory analytics demo
+- **Retail Sales** — Retail sales performance and inventory analytics demo
+- **Soccer Football** — Soccer/football performance and team analytics demo
+- **Spotflix** — Media streaming and content analytics demo
+- **Wealth Management** — Wealth management and investment portfolio analytics demo
 
 The `configs/previews/` subfolder contains PNG screenshots of each configuration's home page for quick reference.
 
